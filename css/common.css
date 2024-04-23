@@ -321,7 +321,7 @@ label {
   transform: rotate(-180deg);
 }
 #footerArea .family_site ul {
-  /* display: none; */
+  display: none;
   width: 100%;
   position: absolute;
   left: 0;
