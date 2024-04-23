@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* 모바일 코딩 필수 공통영역 */
 
-/* TODO: Web Font Import */
+/* DONE: Web Font Import */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 /* font-family: "Noto Sans KR", sans-serif; */
 
@@ -13,7 +13,7 @@
 body {
   color: #333;
   font-size: 14px;
-  /* TODO: font-family */
+  /* DONE: font-family */
   font-family: "Noto Sans KR", sans-serif;
 }
 img,
