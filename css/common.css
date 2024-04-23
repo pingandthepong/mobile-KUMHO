@@ -115,10 +115,11 @@ label {
 
 /* 헤더공통 */
 #headerArea {
-  background: red;
+  background: #ddd;
 }
 #headerArea .header_top {
   overflow: hidden;
+  padding: 0 25px;
 }
 #headerArea h1 {
   float: left;
@@ -128,51 +129,54 @@ label {
   display: block;
   color: #fff;
   text-decoration: none;
-  padding: 20px;
+  width: 81px;
+  height: 38px;
+  background: url('../images/logo.png') no-repeat center;
+  background-size: cover;
+  text-indent: -9999px;
+  margin: 12px 0 5px;
 }
-
 #headerArea .menu_ham {
   display: block;
+  width: 24px;
+  height: 18px;
   float: right;
-  padding-top: 10px;
-  height: 50px;
+  margin: 18px 0 19px;
   position: relative;
   z-index: 30;
-  border-radius: 5px;
 }
 #headerArea .menu_ham span {
-  width: 30px;
-  height: 4px;
+  display: block;
+  width: 20px;
+  height: 2px;
   background: #fff;
   position: relative;
+  top: 50%;
+  right: -4px;
+  transform: translateY(-50%);
   text-indent: -9999px;
-  display: block;
-  margin: 26px 15px;
-  border-radius: 5px;
   transition: all 0.3s;
 }
 #headerArea .menu_ham span::before {
   content: "";
   display: block;
-  width: 30px;
-  height: 4px;
+  width: 24px;
+  height: 2px;
   background: #fff;
   position: absolute;
   top: -7px;
-  left: 0;
-  border-radius: 5px;
+  right: 0px;
   transition: all 0.3s;
 }
 #headerArea .menu_ham span::after {
   content: "";
   display: block;
-  width: 30px;
-  height: 4px;
+  width: 24px;
+  height: 2px;
   background: #fff;
   position: absolute;
   top: 7px;
-  left: 0;
-  border-radius: 5px;
+  right: 0;
   transition: all 0.3s;
 }
 
