@@ -187,7 +187,7 @@ label {
 #headerArea.mn_open .menu_ham span,
 #headerArea.mn_open .menu_ham span::before,
 #headerArea.mn_open .menu_ham span::after {
-  background: #fff;
+  background: #1c1c1c;
 }
 #headerArea.mn_open .menu_ham span {
   background: rgba(0, 0, 0, 0);
@@ -206,15 +206,15 @@ label {
   position: fixed;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   display: none;
 }
 
 /* nav 영역*/
 #gnb {
   position: absolute;
-  width: 85%;
-  left: -100%;
+  width: 88%;
+  right: -100%;
   top: 0;
   opacity: 0;
   background: #fff;
@@ -222,23 +222,38 @@ label {
 }
 
 #gnb > ul {
-  margin-top: 80px;
+  margin-top: 90px;
 }
 #gnb li {
-  border-top: 1px solid #ccc;
-  text-align: center;
-  font-weight: bold;
+  width: 80%;
+  margin: 0 auto 20px;
 }
 #gnb li a {
   display: block;
-  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1c1c1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+#gnb li a::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 8px;
+  background: url('../images/dep1_link_arrow.png') no-repeat center;
+  background-size: cover;
+  transform: rotate(0);
+  transition: all .5s ease;
+}
+#gnb li a.on::after {
+  transform: rotate(180deg);
 }
 #gnb li ul {
   background: rgba(255, 165, 0, 0.2);
   display: none;
-}
-#gnb .last {
-  border-bottom: 1px solid #ccc;
 }
 
 /* 푸터공통 */
