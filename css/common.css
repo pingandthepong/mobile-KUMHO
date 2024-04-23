@@ -118,30 +118,27 @@ label {
   background: #ddd;
 }
 #headerArea .header_top {
-  overflow: hidden;
+  height: 55px;
   padding: 0 25px;
-}
-#headerArea h1 {
-  float: left;
-  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #headerArea h1 a {
   display: block;
-  color: #fff;
-  text-decoration: none;
   width: 81px;
   height: 38px;
   background: url('../images/logo.png') no-repeat center;
   background-size: cover;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
   text-indent: -9999px;
-  margin: 12px 0 5px;
 }
 #headerArea .menu_ham {
   display: block;
   width: 24px;
   height: 18px;
-  float: right;
-  margin: 18px 0 19px;
   position: relative;
   z-index: 30;
 }
