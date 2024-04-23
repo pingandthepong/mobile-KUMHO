@@ -1,5 +1,11 @@
 $(document).ready(function () {
-  var op = false; // nav open = true , close = false
+  // 작업용 임시 코드
+  var documentHeight = $(document).height();
+  $("#gnb").css("height", documentHeight);
+  
+
+
+  var op = false; // #gnb open(true), close(false)
 
   $(".menu_ham, .modal").click(function (e) {
     e.preventDefault();
@@ -41,8 +47,8 @@ $(document).ready(function () {
       //각각의 1depth메뉴의 서브가 닫혀있냐??
       //$('#gnb .depth1 ul').hide();
       $(this).addClass('on');
-      $(this).parents(".depth1").find("ul").slideDown("slow"); //자신의 서브를 열어라
-      $(this).parents(".depth1").siblings("li").find("ul").slideUp("fast"); //자신을 제외한 모든 서브를 닫아라
+      $(this).parents(".depth1").find("ul").slideDown(300); //자신의 서브를 열어라
+      $(this).parents(".depth1").siblings("li").find("ul").slideUp(300); //자신을 제외한 모든 서브를 닫아라
       for (var i = 0; i < arrcount; i++) onoff[i] = false; //모든 배열값을 false
       onoff[ind] = true; //자신의 대한 배열만 true로 변경
 
@@ -51,7 +57,7 @@ $(document).ready(function () {
     } else {
       //각각의 1depth메뉴의 서브가 열려있냐??
       $(this).removeClass('on');
-      $(this).parents(".depth1").find("ul").slideUp("fast"); //지 서브를 닫아라~~
+      $(this).parents(".depth1").find("ul").slideUp(300); //지 서브를 닫아라~~
       onoff[ind] = false; // true->false
 
       $(this).find("span").text("+");
