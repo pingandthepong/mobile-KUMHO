@@ -48,3 +48,16 @@
     font-size: 16px;
   }
 }
+.pagination1 {
+  margin-bottom: 3%;
+}
+.pagination1 .swiper-pagination-bullet {
+  width: 10%;
+  height: 4px;
+  border-radius: 0;
+  background: #fff;
+  opacity: 0.4;
+}
+.pagination1 .swiper-pagination-bullet-active {
+  opacity: 1;
+}
