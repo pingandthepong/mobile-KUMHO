@@ -291,21 +291,39 @@ label {
 /* 푸터공통 */
 #footerArea {
   background: #111;
-  padding: 70px 70px 86px;
+  padding: 70px 0 86px;
   color: #fff;
 }
-#footerArea .util_link {}
-#footerArea .util_link li {}
+#footerArea .util_link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+#footerArea .util_link li {
+  flex-shrink: 1;
+}
 #footerArea .util_link li a {
+  width: 100%;
   font-size: 1.14rem;
   color: #aaa;
-  padding: 10px;
+  padding: 10px 0;
 }
-#footerArea .util_link li a.accnet {
+@media screen and (max-width: 420px ) {
+  #footerArea .util_link {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+#footerArea .util_link li a.accent {
   color: #ef0010;
 }
-#footerArea .family_site {}
-#footerArea .family_site .arrow {}
+#footerArea .family_site {
+}
+#footerArea .family_site .arrow {
+  color: #fff;
+}
 #footerArea .family_site .arrow::after {}
 #footerArea .family_site ul {
   display: none;
