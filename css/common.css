@@ -10,9 +10,11 @@
   padding: 0;
   -webkit-text-size-adjust: none;
 }
+html {
+  font-size: 14px;
+}
 body {
   color: #333;
-  font-size: 14px;
   /* DONE: font-family */
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -231,7 +233,7 @@ label {
 #gnb .mainMenu .depth1 h3 a {
   padding: 0 10%;
   display: block;
-  font-size: 18px;
+  font-size: 1.29rem;
   font-weight: 700;
   color: #1c1c1c;
   display: flex;
@@ -256,6 +258,7 @@ label {
   border-top: 1px solid #e9e9e9;
   border-bottom: 1px solid #e9e9e9;
   background: #f8f8f8;
+  padding: 12px 0;
   display: none;
 }
 #gnb .mainMenu .depth1 ul li {
@@ -263,8 +266,8 @@ label {
 }
 #gnb .mainMenu .depth1 ul li a {
   display: block;
-  font-size: 0.94rem;
-  padding: 1rem 0;
+  font-size: 1rem;
+  padding: 12px 0;
   line-height: 1;
 }
 
@@ -286,3 +289,26 @@ label {
 }
 
 /* 푸터공통 */
+#footerArea {
+  background: #111;
+  padding: 70px 70px 86px;
+  color: #fff;
+}
+#footerArea .util_link {}
+#footerArea .util_link li {}
+#footerArea .util_link li a {
+  font-size: 1.14rem;
+  color: #aaa;
+  padding: 10px;
+}
+#footerArea .util_link li a.accnet {
+  color: #ef0010;
+}
+#footerArea .family_site {}
+#footerArea .family_site .arrow {}
+#footerArea .family_site .arrow::after {}
+#footerArea .family_site ul {
+  display: none;
+}
+#footerArea .family_site ul li {}
+#footerArea .family_site ul li a {}
