@@ -1,10 +1,4 @@
 $(document).ready(function () {
-  // 작업용 임시 코드
-  var documentHeight = $(document).height();
-  $("#gnb").css("height", documentHeight);
-  
-
-
   var op = false; // #gnb open(true), close(false)
 
   $(".menu_ham, .modal").click(function (e) {

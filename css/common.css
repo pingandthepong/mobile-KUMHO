@@ -220,8 +220,6 @@ label {
   background: #fff;
   z-index: 20;
   overflow-x: scroll;
-  /* 임시코드 */
-  /* right: 0; opacity: 1; */
 }
 
 #gnb .mainMenu {
@@ -268,6 +266,23 @@ label {
   font-size: 0.94rem;
   padding: 1rem 0;
   line-height: 1;
+}
+
+#gnb .sns {
+  padding: 0 10%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+#gnb .sns li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+#gnb .sns li a img {
+  height: 24px;
 }
 
 /* 푸터공통 */
