@@ -106,7 +106,27 @@
           </ul>
         </nav>
       </header>
-      <div class="visual">비주얼영역</div>
+      <div class="visual">
+        <div class=".visual_box1">
+          <div class="swiper-container swiper1">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="./images/visual.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/visual-1.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/visual-2.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/visual-3.png" alt="">
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
       <article id="content">
         <h2 class="hidden">본문콘텐츠영역</h2>
         본문
@@ -126,6 +146,48 @@
       AOS.init({
         easing: 'ease-in-out-sine',
       });
+
+      // new Swiper가 잡는 클래스명 맞게 고쳐주기
+      var Swiper1 = new Swiper('.swiper1', {
+        autoHeight: true, //높이유동  ( .swiper-container에 height:auto)
+        slidesPerView: 1,
+        loop: true,
+        navigation: {
+          nextEl: '.next1',
+          prevEl: '.prev1',
+        },
+        pagination: {
+          el: '.pagination1',
+          clickable: true,
+        }
+      });
+      // var Swiper2 = new Swiper('.swiper2', {
+      //   slidesPerView: 2,
+      //   spaceBetween: 5,
+      //   loop: true,
+      //   // initialSlide: 1, // initialSlide보다는 loop가 더 적절하다고 생각된다.
+      //   centeredSlides: true,
+      //   navigation: {
+      //     nextEl: '.next2',
+      //     prevEl: '.prev2',
+      //   },
+      //   pagination: {
+      //     el: '.pagination2',
+      //     clickable: true,
+      //   }
+      // });
+      // var Swiper3 = new Swiper('.swiper3', {
+      //   slidesPerView: 'auto',
+      //   spaceBetween: 5,
+      //   navigation: {
+      //     nextEl: '.next3',
+      //     prevEl: '.prev3',
+      //   },
+      //   pagination: {
+      //     el: '.pagination3',
+      //     clickable: true,
+      //   }
+      // });
     </script>
   </body>
 </html>

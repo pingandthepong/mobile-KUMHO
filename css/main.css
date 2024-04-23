@@ -1,1 +1,8 @@
 /* 메인 비주얼, 콘텐츠 */
+.visual {
+
+}
+.visual .swiper-container img {
+  width: 100%;
+  object-fit: cover;
+}
