@@ -466,3 +466,27 @@
 #ci3 {
   accent-color: #8afcaa;
 }
+
+/* .sec5 */
+#content .sec5 {}
+#content .sec5 section {
+  padding: 0;
+}
+#content .sec5 section h4 {
+  font-size: 1.43rem;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#content .sec5-1 {
+  margin-bottom: 60px;
+}
+#content .sec5-1 .swiper4,
+#content .sec5-2 .swiper5, {
+  width: 100%;
+}
+#content .sec5-1 .swiper4 img,
+#content .sec5-2 .swiper5 img {
+  width: 100%;
+}
