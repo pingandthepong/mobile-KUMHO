@@ -293,12 +293,26 @@ label {
   display: flex;
   flex-direction: column;
 }
+#footerArea .logo_footer {
+  order: 3;
+}
+#footerArea address {
+  order: 2;
+}
+#footerArea .family_site {
+  order: 1;
+}
+#footerArea .util_link {
+  order: 0;
+}
+#footerArea .copy {
+  order: 4;
+}
 
 #footerArea .family_site {
   width: 200px;
   margin: 0 auto;
   position: relative;
-  order: 1;
 }
 #footerArea .family_site .arrow {
   width: 100%;
@@ -342,7 +356,6 @@ label {
   align-items: center;
   gap: 15px;
   margin-bottom: 30px;
-  order: 0;
 }
 #footerArea .util_link li a {
   display: inline;
