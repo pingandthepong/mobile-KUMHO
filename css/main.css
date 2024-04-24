@@ -213,7 +213,7 @@
   aspect-ratio: 16 / 10.4;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 0 5px 0 rgba(0,0,0,.45);
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,.45);
 }
 #content .sec3 .swiper3 .swiper-slide a {
 }
