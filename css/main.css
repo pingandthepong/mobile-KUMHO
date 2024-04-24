@@ -62,3 +62,84 @@
 .pagination1 .swiper-pagination-bullet-active {
   opacity: 1;
 }
+
+/* #content */
+/* .sec1 */
+#content .sec1 {
+  padding: 100px 0;
+}
+#content .sec1 ul {
+  width: 78.125%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+#content .sec1 li {
+  width: 47%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#content .sec1 li:nth-child(even) {
+  transform: translateY(10%);
+}
+#content .sec1 li a {
+  width: 100%;
+  aspect-ratio: 1 / 1.5;
+  font-size: 1.71rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+}
+#content .sec1 li:nth-of-type(1) a {
+  background: url('../images/sec1_1.png');
+  background-size: cover;
+}
+#content .sec1 li:nth-of-type(2) a {
+  background: url('../images/sec1_2.png');
+  background-size: cover;
+}
+#content .sec1 li:nth-of-type(3) a {
+  background: url('../images/sec1_3.png');
+  background-size: cover;
+}
+#content .sec1 li:nth-of-type(4) a {
+  background: url('../images/sec1_4.png');
+  background-size: cover;
+}
+#content .sec1 li a span {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+@media screen and (max-width: 530px) {
+  #content .sec1 li a {
+    font-size: 1.71rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #content .sec1 ul {
+    gap: 12px;
+  }
+  #content .sec1 li a {
+    font-size: 1.51rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  #content .sec1 ul {
+    gap: 20px;
+  }
+  #content .sec1 li {
+    width: 100%;
+  }
+  #content .sec1 li:nth-child(even) {
+    transform: translateY(0);
+  }
+  #content .sec1 li a {
+    width: 100%;
+    aspect-ratio: 1 / 1.618;
+    font-size: 2rem;
+  }
+}
