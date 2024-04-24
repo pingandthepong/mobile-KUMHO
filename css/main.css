@@ -490,3 +490,22 @@
 #content .sec5-2 .swiper5 img {
   width: 100%;
 }
+#content .sec5-1 .img_box {
+  margin-bottom: 2.5%;
+}
+#content .sec5-1 .txt_box {}
+#content .sec5-1 .txt_box .tit {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.75;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#content .sec5-1 .txt_box .txt {
+  font-size: 0.9rem;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
