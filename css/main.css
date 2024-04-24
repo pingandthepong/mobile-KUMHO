@@ -369,38 +369,35 @@
 }
 /* .sec4 .earning-rate */
 #content .sec4 .earning-rate {
-  width: 680px;
-  height: 657px;
+  width: 100%;
+  aspect-ratio: 100 / 97.5;
+  margin-top: 50px;
   background: #fff;
-  border: 2px solid #c5c5c5;
-  border-radius: 50px;
-  padding: 53px 58px 60px;
-  box-sizing: border-box;
+  border-radius: 20px;
 }
 #content .sec4 .earning-rate h4 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 #content .sec4 .earning-rate_inner {
   border-top: 1px solid #c5c5c5;
   border-bottom: 1px solid #c5c5c5;
-  padding: 12px 0 30px;
+  padding: 3% 0 8%;
   position: relative;
 }
 #content .sec4 .tab_list_wrapper {
-  letter-spacing: -1.2px;
+  letter-spacing: -0.1rem;
   font-weight: 500;
 }
 #content .sec4 .tab_list_wrapper .tab_list_title {
   float: left;
-  margin-right: 10px;
 }
 #content .sec4 .tab_list_wrapper .tabs {
   float: right;
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 6px;
 }
 #content .sec4 .tab_list_wrapper .tabs a {
   padding: 0 10px;
@@ -408,7 +405,7 @@
 #content .sec4 .notice_date {
   position: absolute;
   right: 0;
-  top: 70px;
+  top: 10%;
   font-size: 0.8rem;
   color: #666;
 }
@@ -417,8 +414,8 @@
 }
 #content .sec4 .graph .canvas_wrap {
   width: 100%;
-  height: 260px;
-  margin: 80px 0 20px;
+  aspect-ratio: 100 / 46;
+  margin: 15% 0 5%;
 }
 #content .sec4 .graph .chart {
   display: grid;
@@ -427,31 +424,36 @@
 }
 #content .sec4 .graph .button_bar {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 20px;
   background: #f2f3f8;
-  border-radius: 8px;
+  border-radius: 4px;
   box-sizing: border-box;
-  height: 26px;
+  padding: 3%;
 }
 #content .sec4 .graph .button_bar .checkbox {
   display: flex;
   align-items: center;
+  gap: 4px;
 }
 #content .sec4 .graph .button_bar label {
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 600;
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 #content .sec4 .graph .button_bar label small {
+  font-size: 0.9rem;
   font-weight: 300;
 }
 #content .sec4 .graph .notice_des {
-  font-size: 0.8rem;
-  margin-top: 10px;
-  color: #999;
+  font-size: 1rem;
   font-weight: 300;
+  letter-spacing: -0.09rem;
+  margin-top: 2.5%;
+  color: #999;
 }
 #ci2 {
   accent-color: #f65742;
