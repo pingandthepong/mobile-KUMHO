@@ -69,16 +69,16 @@
   padding: 100px 0;
 }
 #content .sec1 ul {
-  width: 78.125%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: 8px;
 }
 #content .sec1 li {
-  width: 47%;
-  border-radius: 30px;
+  width: 48%;
+  border-radius: 12px;
   overflow: hidden;
 }
 #content .sec1 li:nth-child(even) {
@@ -87,8 +87,7 @@
 #content .sec1 li a {
   width: 100%;
   aspect-ratio: 1 / 1.5;
-  font-size: 1.71rem;
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #fff;
   position: relative;
@@ -111,35 +110,6 @@
 }
 #content .sec1 li a span {
   position: absolute;
-  left: 30px;
-  bottom: 30px;
-}
-@media screen and (max-width: 530px) {
-  #content .sec1 li a {
-    font-size: 1.71rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  #content .sec1 ul {
-    gap: 12px;
-  }
-  #content .sec1 li a {
-    font-size: 1.51rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  #content .sec1 ul {
-    gap: 20px;
-  }
-  #content .sec1 li {
-    width: 100%;
-  }
-  #content .sec1 li:nth-child(even) {
-    transform: translateY(0);
-  }
-  #content .sec1 li a {
-    width: 100%;
-    aspect-ratio: 1 / 1.618;
-    font-size: 2rem;
-  }
+  left: 10%;
+  bottom: 5%;
 }
