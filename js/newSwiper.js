@@ -33,8 +33,17 @@ const Swiper3 = new Swiper('.swiper3', {
 });
 
 const Swiper5 = new Swiper(".swiper5", {
+  effect: "cube",
+  grabCursor: true,
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
+  },
   slidesPerView: 2,
   loop: true,
   spaceBetween: 10,
   centeredSlides: true,
+  
 });
