@@ -391,13 +391,14 @@
   font-weight: 500;
 }
 #content .sec4 .tab_list_wrapper .tab_list_title {
+  font-size: .8rem;
   float: left;
 }
 #content .sec4 .tab_list_wrapper .tabs {
+  font-size: 0.8rem;
   float: right;
   display: flex;
   justify-content: space-between;
-  gap: 6px;
 }
 #content .sec4 .tab_list_wrapper .tabs a {
   padding: 0 10px;
@@ -405,8 +406,8 @@
 #content .sec4 .notice_date {
   position: absolute;
   right: 0;
-  top: 10%;
-  font-size: 0.8rem;
+  top: 8%;
+  font-size: 0.76rem;
   color: #666;
 }
 #content .sec4 .graph {
@@ -414,7 +415,7 @@
 }
 #content .sec4 .graph .canvas_wrap {
   width: 100%;
-  aspect-ratio: 100 / 46;
+  aspect-ratio: 16 / 9;
   margin: 15% 0 5%;
 }
 #content .sec4 .graph .chart {
