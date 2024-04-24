@@ -1,8 +1,8 @@
 $.ajax({
-  url: "../data/youtube.json",
+  url: "./data/mobile_youtube.json",
   dataType: "json",
   success: function (data) {
-    var useData = data.youtube;
+    var useData = data.mobileYoutube;
 
     function dataPrint() {
       
