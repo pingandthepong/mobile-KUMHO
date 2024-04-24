@@ -359,6 +359,9 @@ label {
     flex-direction: column;
     gap: 6px;
   }
+  #footerArea .util_link li a {
+    font-size: 1rem;
+  }
 }
 #footerArea .util_link li a.accent {
   color: #ef0010;
