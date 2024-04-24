@@ -229,21 +229,27 @@
   width: 100%;
   aspect-ratio: 16 / 3.615;
   position: relative;
-  right: 5%;
+  left: 0;
   top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 #content .sec3 .swiper3 .swiper-slide a .award_txt dt {
-  font-size: 1.4rem;
+  width: 100%;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #333;
+  letter-spacing: -0.09rem;
   position: absolute;
-  right: 70%;
+  left: 5%;
+}
+#content .sec3 .swiper3 .swiper-slide a .award_txt dt span.title {
+  display: block;
 }
 #content .sec3 .swiper3 .swiper-slide a .award_txt dd {
   text-align: right;
+  padding-right: 5%;
 }
 #content .sec3 .swiper3 .swiper-slide a .award_txt .award_institution {
   font-size: 1rem;
@@ -254,5 +260,4 @@
   font-size: .8rem;
   font-weight: 200;
   color: #999;
-  
 }
