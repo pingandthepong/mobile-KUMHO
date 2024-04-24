@@ -293,21 +293,24 @@ label {
   display: flex;
   flex-direction: column;
 }
+/* footer order */
+#footerArea .logo_footer { order: 3; }
+#footerArea address { order: 2; }
+#footerArea .family_site { order: 1; }
+#footerArea .util_link { order: 0; }
+#footerArea .copy { order: 4; }
+
+/* footer 내부 요소 스타일링 */
 #footerArea .logo_footer {
-  order: 3;
+  width: 147px;
+  height: 69px;
+  margin: 40px auto;
+  background: url('../images/logo.png') no-repeat center;
+  background-size: cover;
+  text-indent: -9999px;
 }
-#footerArea address {
-  order: 2;
-}
-#footerArea .family_site {
-  order: 1;
-}
-#footerArea .util_link {
-  order: 0;
-}
-#footerArea .copy {
-  order: 4;
-}
+
+#footerArea address { order: 2; }
 
 #footerArea .family_site {
   width: 200px;
@@ -376,3 +379,8 @@ label {
 #footerArea .util_link li a.accent {
   color: #ef0010;
 }
+
+#footerArea .copy { order: 4; }
+
+
+
