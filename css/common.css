@@ -298,7 +298,7 @@ label {
 }
 
 #footerArea .family_site {
-  width: 226px;
+  width: 200px;
   margin: 0 auto;
   position: relative;
   order: 1;
@@ -322,18 +322,17 @@ label {
 }
 #footerArea .family_site ul {
   display: none;
-  width: 100%;
+  width: 90%;
   position: absolute;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 100;
-  bottom: calc(100% + 10px);
   bottom: 100%;
   background: #252525;
   border-radius: 12px;
   padding: 20px 30px;
   box-sizing: border-box;
 }
-#footerArea .family_site ul li {}
 #footerArea .family_site ul li a {
   display: block;
   color: #fff;
