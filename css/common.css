@@ -325,6 +325,7 @@ label {
   width: 100%;
   position: absolute;
   left: 0;
+  z-index: 100;
   bottom: calc(100% + 10px);
   bottom: 100%;
   background: #252525;
