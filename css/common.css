@@ -310,11 +310,31 @@ label {
   text-indent: -9999px;
 }
 
-#footerArea address { order: 2; }
+#footerArea address {
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+}
+#footerArea address::before {
+  content: '';
+  display: block;
+  width: 78%;
+  height: 1px;
+  background: rgba(255, 255, 255, .3);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+#footerArea address :is(p, a) {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.5;
+}
 
 #footerArea .family_site {
   width: 200px;
-  margin: 0 auto;
+  margin: 0 auto 35px;
   position: relative;
 }
 #footerArea .family_site .arrow {
