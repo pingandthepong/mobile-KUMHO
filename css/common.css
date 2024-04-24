@@ -400,7 +400,8 @@ label {
   color: #ef0010;
 }
 
-#footerArea .copy { order: 4; }
-
-
-
+#footerArea .copy {
+  font-size: .9rem;
+  color: #777;
+  text-align: center;
+}
