@@ -41,9 +41,7 @@ const Swiper5 = new Swiper(".swiper5", {
     shadowOffset: 20,
     shadowScale: 0.94,
   },
-  slidesPerView: 2,
+  slidesPerView: 1,
   loop: true,
-  spaceBetween: 10,
-  centeredSlides: true,
   
 });

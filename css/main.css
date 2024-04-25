@@ -507,6 +507,10 @@
   text-overflow: ellipsis;
 }
 
+#content .sec5-2 .swiper-container {
+  width: 90%;
+  margin: 0 auto;
+}
 #content .sec5-2 .swiper-slide {
   width: 100%;
   height: 100%;
