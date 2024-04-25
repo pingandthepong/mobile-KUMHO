@@ -300,6 +300,16 @@
   border-radius: 20px;
   padding: 10% 5%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#content .iframe_box .iframe_head {
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 #content .iframe_box .iframe_head::before {
   content: "";
@@ -309,16 +319,9 @@
   background: #ef0010 url("../images/KUMHO_Logo_KJH_icon_fff.png") no-repeat 45% 55%;
   background-size: 50%;
   border-radius: 50%;
-  vertical-align: bottom;
-  margin-right: 8px;
-}
-#content .iframe_box .iframe_head {
-  font-size: 1.4rem;
-  font-weight: 700;
 }
 #content .iframe_box .iframe_head span {
   font-size: 1.2rem;
-  margin-left: 8px;
   font-weight: 400;
 }
 #content .iframe_box .positive {
@@ -330,7 +333,7 @@
 /* .iframe_box .middle */
 #content .iframe_box .middle {
   width: 90%;
-  margin: 30px auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -344,6 +347,15 @@
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 420px) and (orientation: landscape) {
+  #content .iframe_box .middle .last {
+    font-size: 3rem;
+  }
+  #content .iframe_box .middle .changerate_box {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
 #content .iframe_box .middle .changerate_box li {
   display: flex;
   align-items: center;
@@ -353,7 +365,7 @@
   font-size: 1.25rem;
   font-weight: 600;
 }
-#content .iframe_box .middle .changerate_box .positive {
+#content .iframe_box .middle .changerate_box span {
   display: flex;
   align-items: center;
   gap: 3px;
