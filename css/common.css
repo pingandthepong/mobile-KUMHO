@@ -134,10 +134,9 @@ label {
   align-items: center;
 }
 #headerArea h1 a {
-  width: 81px;
-  height: 38px;
+  width: 82px;
+  height: 29px;
   background: url('../images/logo.png') no-repeat center;
-  background-size: cover;
   font-size: 30px;
   color: #fff;
   text-decoration: none;
