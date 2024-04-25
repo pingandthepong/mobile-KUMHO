@@ -441,7 +441,6 @@ label {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  z-index: 200;
-  /* display: none; */
+  z-index: 999;
   opacity: 0;
 }
