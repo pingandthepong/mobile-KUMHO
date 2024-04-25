@@ -299,7 +299,7 @@ label {
 /* 푸터공통 */
 #footerArea {
   background: #111;
-  padding: 70px 0 86px;
+  padding: 60px 0 30px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -412,7 +412,7 @@ label {
 }
 
 #footerArea .copy {
-  font-size: .9rem;
+  font-size: .8rem;
   color: #777;
   text-align: center;
 }
