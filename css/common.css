@@ -442,5 +442,6 @@ label {
   right: 20px;
   bottom: 20px;
   z-index: 200;
-  display: none;
+  /* display: none; */
+  opacity: 0;
 }
