@@ -133,7 +133,14 @@ label {
   justify-content: space-between;
   align-items: center;
 }
-#headerArea h1 a {
+#headerArea .header_top.hide {
+  display: none;
+}
+#headerArea .header_top.white {
+  background: #fff;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+}
+#headerArea .header_top h1 a {
   width: 82px;
   height: 29px;
   background: url('../images/logo.png') no-repeat center;
@@ -142,9 +149,17 @@ label {
   text-decoration: none;
   text-indent: -9999px;
 }
+#headerArea .header_top.white h1 a {
+  background: url('../images/logo_black.png') no-repeat center;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  #headerArea h1 a {
+  #headerArea .header_top h1 a {
     background: url('../images/logox2.png');
+    background-size: 82px 29px;
+  }
+  #headerArea .header_top.white h1 a {
+    background: url('../images/logox2_bl.png');
     background-size: 82px 29px;
   }
 }
@@ -189,7 +204,15 @@ label {
   right: 0;
   transition: all 0.3s;
 }
-
+#headerArea .menu_ham.black span {
+  background: #000;
+}
+#headerArea .menu_ham.black span::before {
+  background: #000;
+}
+#headerArea .menu_ham.black span::after {
+  background: #000;
+}
 /* 메뉴가 열렸을때 */
 #headerArea.mn_open .menu_ham span,
 #headerArea.mn_open .menu_ham span::before,
