@@ -133,7 +133,24 @@
   color: #fff;
   text-shadow: 0 0 10px rgba(0,0,0,.25);
 }
+#content .sec2.master h3::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  margin: 10% auto 0;
 
+}
+#content .sec2.master h3::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  margin: 0 auto 10%;
+
+}
 #content .sec2.master .swiper2 {
   width: 100%;
   height: 100%;
@@ -198,6 +215,7 @@
 }
 .pagination2 .swiper-pagination-bullet-active {
   opacity: 1;
+  background: #ef0010;
 }
 
 /* .sec3.award */
