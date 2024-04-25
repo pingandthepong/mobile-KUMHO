@@ -318,14 +318,19 @@ label {
 
 /* footer 내부 요소 스타일링 */
 #footerArea .logo_footer {
-  width: 147px;
-  height: 69px;
+  width: 150px;
+  height: 53px;
+  background: url('../images/footer_logo.png') no-repeat center;
   margin: 40px auto;
-  background: url('../images/logo.png') no-repeat center;
-  background-size: cover;
   text-indent: -9999px;
+  overflow: hidden;
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #footerArea .logo_footer {
+    background: url('../images/footer_logox2.png') no-repeat 0 0;
+    background-size: 150px 53px;
+  }
+}
 #footerArea address {
   text-align: center;
   padding-top: 50px;
