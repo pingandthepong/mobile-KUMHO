@@ -16,7 +16,7 @@ $(window).on('scroll', function() {
 
   // 스크롤이 위에 다다르면 headerArea 다시 투명하게
   if (scroll <= 10) {
-    $('.header_top').removeClass('white');
+    $('.header_top').removeClass('white hide').addClass('show');
     $('.menu_ham').removeClass('black');
   }
 });
