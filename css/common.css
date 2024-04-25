@@ -228,17 +228,16 @@ label {
   margin-top: 90px;
 }
 #gnb .mainMenu .depth1 {
-  margin: 0 auto 20px;
+  margin: 0 auto;
 }
 #gnb .mainMenu .depth1 h3 a {
-  padding: 0 10%;
+  padding: 15px 10%;
   font-size: 1.43rem;
   font-weight: 700;
   color: #1c1c1c;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
 }
 #gnb .mainMenu .depth1 h3 a::after {
   content: '';
