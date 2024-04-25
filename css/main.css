@@ -228,7 +228,6 @@
 }
 #content .sec3.award .swiper3 {
   width: 100%;
-  margin: 0 auto;
   padding: 10px 0;
 }
 #content .sec3.award .swiper3 .swiper-slide {
@@ -240,7 +239,7 @@
 }
 #content .sec3.award .swiper3 .swiper-slide a .img_wrap {
   width: 100%;
-  aspect-ratio: 16 / 6.785;
+  /* aspect-ratio: 16 / 6.785; */
   overflow: hidden;
 }
 #content .sec3.award .swiper3 .swiper-slide a .img_wrap img {
@@ -281,6 +280,17 @@
   font-size: .8rem;
   font-weight: 200;
   color: #999;
+}
+@media screen and (orientation: landscape) {
+  #content .sec3.award .swiper3 .swiper-slide a .award_txt dt {
+    font-size: 1.43rem;
+  }
+  #content .sec3.award .swiper3 .swiper-slide a .award_txt .award_institution {
+    font-size: 1.14rem;
+  }
+  #content .sec3.award .swiper3 .swiper-slide a .award_txt .date {
+    font-size: 1rem;
+  }
 }
 
 /* .sec4.invest */
