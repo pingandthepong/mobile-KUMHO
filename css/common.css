@@ -429,8 +429,18 @@ label {
   text-align: center;
 }
 #footerArea .move_top {
-  color: #fff;
+  width: 40px;
+  height: 40px;
+  background: #f8f8f8;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,.3);
+  border-radius: 50%;
+  color: #ef0010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  right: 10%;
-  bottom: 5%;
+  right: 20px;
+  bottom: 20px;
+  z-index: 200;
+  display: none;
 }
