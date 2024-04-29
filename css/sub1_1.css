@@ -1,3 +1,7 @@
+#content section {
+  padding: 0;
+}
+
 /* section.intro */
 #content .intro_bg {
   position: relative;
