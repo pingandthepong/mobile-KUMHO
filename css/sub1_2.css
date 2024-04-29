@@ -321,27 +321,35 @@
 /* .invest3 */
 #content .contlist.tab1 .invest3 {
   position: relative;
+  .category {
+    position: absolute;
+    left: 0;
+    top: 120px;
+    font-size: 1.1rem;
+  }
+  .graph {
+    width: 100%;
+    margin: 10% auto;
+    position: relative;
+  }
+  .date {
+    display: block;
+    text-align: right;
+    color: #999;
+  }
 }
-#content .contlist.tab1 .invest3 .category {
-  position: absolute;
-  left: 0;
-  top: 120px;
-  font-size: 1.1rem;
-}
-#content .contlist.tab1 .invest3 .graph {
-  width: 100%;
-  margin: 50px auto 30px;
-  position: relative;
-}
+
 #content .contlist.tab1 .invest3 .graph .label {
   display: flex;
   align-items: center;
   gap: 6px;
   font-size: 1.1rem;
+  line-height: 1.5;
+  .per {
+    font-weight: 700;
+  }
 }
-#content .contlist.tab1 .invest3 .graph .label .per {
-  font-weight: 700;
-}
+
 #content .contlist.tab1 .invest3 .graph .label1 .per {
   color: #ef0010;
 }
@@ -387,19 +395,14 @@
   content: "";
   background: #00D0FF;
 }
-#content .contlist.tab1 .invest3 .date {
-  display: block;
-  text-align: right;
-  color: #999;
-}
+
 /* ===== chartjs start ===== */
 #invest3Graph .chartjs-render-monitor .chartjs-chart-labels {
   display: none;
 }
 #content .contlist.tab1 .invest3 .graph .chart2 {
-  width: 100%;
-  margin-bottom: 30px;
-  margin-bottom: 10%;
+  width: 90%;
+  margin: 0 auto 5%;
 }
 /* ===== chartjs end ===== */
 
@@ -409,38 +412,39 @@
   overflow-x: scroll;
   padding-bottom: 10%;
   margin-bottom: 0;
+  .title {
+    width: 200%;
+  }
+  .title span {
+    position: sticky;
+    left: 0;
+    top: 0;
+  
+  }
+  table {
+    width: 200%;
+    position: relative;
+  }
 }
-#content .contlist.tab1 .invest4 .title {
-  width: 200%;
-}
-#content .contlist.tab1 .invest4 .title span {
-  position: sticky;
-  left: 0;
-  top: 0;
 
-}
-#content .contlist.tab1 .invest4 table {
-  width: 200%;
-  position: relative;
-}
 #content .contlist.tab1 .invest4 table tr :is(th:first-child, td:first-child):not(th:last-of-type) {
   position: sticky;
   left: 0;
   top: 0;
   background: #fff;
   border-right: none;
+  &::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: #e5e5e5;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
-#content .contlist.tab1 .invest4 table tr :is(th:first-child, td:first-child):not(th:last-of-type)::after {
-  content: '';
-  display: block;
-  width: 1px;
-  height: 100%;
-  background: #e5e5e5;
-  position: absolute;
-  right: 0;
-  top: 0;
 
-}
 #content .contlist.tab1 .invest4 td:last-child::after {
   content: "%";
 }
@@ -449,50 +453,55 @@
   position: sticky;
   left: 0;
   top: 0;
-}
-#content .contlist.tab1 .invest4 .table_des p::before {
-  content: "※ ";
-}
-#content .contlist.tab1 .invest4 .table_des p {
-  line-height: 2;
+  p {
+    line-height: 2;
+  }
+  p::before {
+    content: "※ ";
+  }
 }
 
 /* .tab2 */
 #content .contlist.tab2 .data1 {
   width: 750px;
   margin: 0 auto;
+  iframe {
+    height: 950px;
+  }
 }
-#content .contlist.tab2 .data1 iframe {
-  height: 950px;
-}
+
 /* .data2 */
 #content .contlist.tab2 .data2 .title {
   border-bottom: none;
 }
-#content .contlist.tab2 .data2 table th {
-  border-top: 4px solid #f65742;
-  border-bottom: 1px solid #f65742;
+#content .contlist.tab2 .data2 table {
+  th {
+    border-top: 4px solid #f65742;
+    border-bottom: 1px solid #f65742;
+  }
+  tr {
+    border-bottom: 1px solid #ddd;
+    font-weight: 300;
+    line-height: 70px;
+  }
+  i {
+    width: 100%;
+    cursor: pointer;
+    line-height: 70px;
+  }
 }
-#content .contlist.tab2 .data2 table tr {
-  border-bottom: 1px solid #ddd;
-  font-weight: 300;
-  line-height: 70px;
-}
-#content .contlist.tab2 .data2 table i {
-  width: 100%;
-  cursor: pointer;
-  line-height: 70px;
-}
+
 #content .contlist.tab2 .paging {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 50px 0;
+  button {
+    border: none;
+    background: none;
+  }
 }
-#content .contlist.tab2 .paging button {
-  border: none;
-  background: none;
-}
+
 #content .contlist.tab2 .paging :is(button, a) {
   width: 30px;
   height: 30px;

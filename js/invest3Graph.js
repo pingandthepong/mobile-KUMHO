@@ -24,6 +24,13 @@ const investConfig = {
         onClick: function(event, legendItem) {
           // 클릭 이벤트 무시
           event.stopPropagation();
+        },
+        position: 'bottom',
+        align: 'center',
+        labels: {
+          boxWidth: 20,
+          boxHeight: 20,
+          padding: 10,
         }
       },
       tooltip: {
