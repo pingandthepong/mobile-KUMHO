@@ -27,13 +27,9 @@
 }
 
 #content .intro_description {
-  background: #f8f8f8;
-  padding: 50px 0;
-}
-#content .intro_description .intro_desc_wrap {
   width: 90%;
   margin: 0 auto;
-  
+  padding: 50px 0;
 }
 #content .intro_description p:first-of-type::after {
   content: '';
@@ -51,10 +47,13 @@
 /* mySwiper1 */
 .mySwiper1 {
   width: 100%;
+  padding: 15% 0;
 }
 .mySwiper1 img {
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 /* section.intro ul */
 #content .intro > ul {
