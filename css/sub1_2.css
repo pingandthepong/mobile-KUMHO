@@ -446,6 +446,9 @@
 }
 #content .contlist.tab1 .invest4 .table_des {
   margin-top: 5%;
+  position: sticky;
+  left: 0;
+  top: 0;
 }
 #content .contlist.tab1 .invest4 .table_des p::before {
   content: "※ ";
