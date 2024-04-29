@@ -462,19 +462,11 @@
 }
 
 /* .tab2 */
-#content .contlist.tab2 .data1 {
-  width: 750px;
-  margin: 0 auto;
-  iframe {
-    height: 950px;
-  }
-}
-
-/* .data2 */
-#content .contlist.tab2 .data2 .title {
+/* .data1 */
+#content .contlist.tab2 .data1 .title {
   border-bottom: none;
 }
-#content .contlist.tab2 .data2 table {
+#content .contlist.tab2 .data1 table {
   th {
     border-top: 4px solid #f65742;
     border-bottom: 1px solid #f65742;
