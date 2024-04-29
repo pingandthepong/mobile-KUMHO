@@ -1,0 +1,27 @@
+/* section.intro */
+#content .intro_bg {
+  position: relative;
+}
+#content .intro_bg img {
+  width: 100%;
+}
+#content .intro_txt {
+  width: 86%;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+#content .intro_txt h3 {
+  font-size: 1.71rem;
+  line-height: 1.5;
+  letter-spacing: .02rem;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 40%;
+}
+#content .intro_txt p {
+  font-size: 1.14rem;
+  font-weight: 500;
+}

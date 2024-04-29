@@ -7,6 +7,7 @@
     <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
     <link rel="apple-touch-startup-image" href="./startup.png">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub1common.css">
     <link rel="stylesheet" href="./css/sub1_1.css">
     <script src="./js/prefixfree.min.js"></script>
     <script>
@@ -30,23 +31,326 @@
     </div>
 
     <div id="wrap">
+      <!-- #headerArea -->
       <header id="headerArea">
-        <h1><a href="index.html">로고</a></h1>
-
+        <div class="header_top show">
+          <!-- DONE: IR 기법 사용하기 -->
+          <h1><a href="#">로고</a></h1>
+          <a href="#" class="menu_ham"><span>메뉴열기</span></a>
+        </div>
+        <div class="modal"></div>
         <nav id="gnb">
           <h2 class="hidden">글로벌네비게이션영역</h2>
+          <ul class="mainMenu">
+            <li class="depth1">
+              <h3 data-aos="fade-up" data-aos-duration="1000">
+                <a href="#">회사소개</a>
+              </h3>
+              <ul>
+                <li><a href="./sub1_1.html">VISION</a></li>
+                <li><a href="./sub1_2.html">연혁</a></li>
+                <li><a href="./sub1_3.html">투자정보</a></li>
+                <li><a href="./sub1_4.html">오시는 길</a></li>
+              </ul>
+            </li>
+            <li class="depth1">
+              <h3 data-aos="fade-up" data-aos-duration="1000">
+                <a href="#">사업분야</a>
+              </h3>
+              <ul>
+                <li><a href="#">건축사업</a></li>
+                <li><a href="#">토목사업</a></li>
+                <li><a href="#">주택사업</a></li>
+                <li><a href="#">플랜트/환경사업</a></li>
+                <li><a href="#">실적</a></li>
+              </ul>
+            </li>
+            <li class="depth1">
+              <h3 data-aos="fade-up" data-aos-duration="1000">
+                <a href="#">기술혁신</a>
+              </h3>
+              <ul>
+                <li><a href="#">토목건축 연구소</a></li>
+                <li><a href="#">환경연구소</a></li>
+                <li><a href="#">수상실적</a></li>
+              </ul>
+            </li>
+            <li class="depth1">
+              <h3 data-aos="fade-up" data-aos-duration="1000">
+                <a href="#">지속가능경영</a>
+              </h3>
+              <ul>
+                <li><a href="#">품질경영</a></li>
+                <li><a href="#">안전경영</a></li>
+                <li><a href="#">환경경영</a></li>
+              </ul>
+            </li>
+            <li class="depth1">
+              <h3 data-aos="fade-up" data-aos-duration="1000">
+                <a href="#">인재채용</a>
+              </h3>
+              <ul>
+                <li><a href="#">직무소개</a></li>
+                <li><a href="#">인사제도</a></li>
+                <li><a href="#">채용정보</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="sns">
+              <li><a href="https://www.youtube.com/@kumhoenc" target="_blank" title="금호건설 유튜브 새 창으로 바로가기"><img src="./images/sns_youtube.svg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="./images/sns_facebook.svg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="./images/sns_insta.svg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="./images/sns_twitter.svg" alt=""></a></li>
+          </ul>
         </nav>
       </header>
-      <div class="main">비주얼영역</div>
+
+      <!--  -->
+      <!-- .sub_nav -->
+      <!-- <div class="sub_nav">
+        <ul>
+          <li><a href="./sub1_1.html" class="current">VISION</a></li>
+          <li><a href="./sub1_2.html">연혁</a></li>
+          <li><a href="./sub1_3.html">투자정보</a></li>
+          <li><a href="./sub1_4.html">오시는 길</a></li>
+        </ul>
+      </div> -->
+
+      <!-- article -->
       <article id="content">
         <h2 class="hidden">본문콘텐츠영역</h2>
+        <!-- .title_area -->
+        <!-- <div class="title_area">
+          <div class="line_map">
+            <span class="home">Home</span> &gt; 회사소개 &gt; <strong>VISION</strong>
+          </div>
+            <h2>VISION</h2>
+          <p>Think of the people and nature</p>
+        </div> -->
 
-        본문
+        <!-- .content_area -->
+        <div class="content_area">
+          <!-- section.intro -->
+          <section class="intro">
+            <div class="intro_bg">
+              <img src="./images/sub1_1_visual.jpg" alt="">
+              <div class="intro_txt">
+                <h3 data-aos="fade-up" data-aos-duration="500">Building a Dream<br> for the Global Village</h3>
+                <p class="slogan" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">사람과 자연이 어우러지는<br> 건설철학을 펼쳐 나아갑니다.<br> <strong>금호건설</strong>은 <strong>아름다운 미래</strong>를 건설합니다.</p>
+              </div>
+            </div>
+            <div class="intro_description">
+              <p>
+                <strong>금호건설</strong>은 1967년 역사를 시작하여 반세기가 넘는
+                시간 동안 대한민국 건설역사를 함께 만들어 온 국내 대표
+                건설사입니다.<br>
+                건축, 토목, 플랜트, 환경에 이르기까 시공 전 분야에서 다양한
+                포트폴리오를 구성하며 고객 만족과 함께 국가기반산업 확장에
+                기여하고 있습니다.
+              </p>
+              <p>
+                특히 공항 및 공항 기반시설 공사와 수처리 사업 분야에서의
+                성공적인 완공으로 시장을 선도하고 있으며,<br>두바이 신공항 및
+                아부다비 관제탑 등 해외에서도 괄목할만한 성과를 거두며
+                <span class="accent">
+                  건실하고 강한 금호건설로 성장하고 있습니다.
+                </span>
+              </p>
+            </div>
+            
+            <ul>
+              <li data-aos="fade-right">
+                <div class="vision">
+                  <dl>
+                    <dt>국가기반시설 설립 주도기업</dt>
+                    <dd class="main_des">
+                      금호건설은 고도의 기술을 바탕으로<br>
+                      국가 기반시설 설립을 주도합니다.
+                    </dd>
+                    <dd class="sub_des">
+                      공항시설과 물류시설, SOC사업 등에서 성장을 거듭해 온 국내
+                      TOP<br>
+                      건설업체인 금호건설은 신기술에 의한 환경사업분야, 주택사업
+                      분야 등<br>
+                      다방면에서의 고도의 기술을 바탕으로 비약적인 성장을
+                      거듭하고 있습니다.
+                    </dd>
+                  </dl>
+                  <ul class="vision__list">
+                    <li>인천국제공항, 도심공항터미널</li>
+                    <li>국세청청사, 아셈컨벤션센터, 판교지식산업센터</li>
+                    <li>
+                      고속도로, 고가도로, 뚝섬공원 특화사업, 여의도 한강공원
+                      특화사업
+                    </li>
+                  </ul>
+                </div>
+                <img src="./images/content1/overview1.jpg" alt="">
+              </li>
+              <li data-aos="fade-left" data-aos-delay="150">
+                <div class="vision">
+                  <dl>
+                    <dt>주택 트렌드 선도기업</dt>
+                    <dd class="main_des">
+                      금호건설은 고급 라이프 스타일, 자연친화적인 주거,<br>
+                      사람과 어울려 살아가는 주택 트렌드를 선도합니다.
+                    </dd>
+                    <dd class="sub_des">
+                      이웃과 인간과의 어울림, 자연과의 어울림, 첨단 생활과의
+                      어울림을 의미하는<br>
+                      아파트 브랜드 ‘어울림'을 선보이고 있는 금호건설은<br>
+                      주택 트렌드를 선도하고 있는 국내 최고의
+                      아파트브랜드입니다.
+                    </dd>
+                  </dl>
+                  <ul class="vision__list">
+                    <li>
+                      어울림 파밀리에, 어울림 더퍼스트, 어울림 리버파크, 어울림
+                      리더스파크
+                    </li>
+                    <li>금호리첸시아, 리첸시아 퍼스티지, 리첸시아 파밀리에</li>
+                    <li>제주더힐테라스, 행복주택</li>
+                  </ul>
+                </div>
+                <img src="./images/content1/overview2.jpg" alt="">
+              </li>
+              <li data-aos="fade-right" data-aos-delay="150">
+                <div class="vision">
+                  <dl>
+                    <dt>글로벌 EPC 전문회사</dt>
+                    <dd class="main_des">
+                      금호건설은 두바이와 아부다비를 중심으로 공항 및 공항
+                      기반시설,<br>
+                      수처리와 플랜트 분야에서 괄목할만한 성과를 거두어
+                      왔습니다.
+                    </dd>
+                    <dd class="sub_des">
+                      특히 공항 및 공항 기반시설 공사에서는 타의 추종을 불허하는
+                      기술력으로<br>국내 대표적인 시설을 성공적으로
+                      완공하였으며 두바이 신공항 및<br>
+                      아부다비 관제탑 등 해외시장 관계자들에게 극찬을 받은 바
+                      있습니다.
+                    </dd>
+                  </dl>
+                  <ul class="vision__list">
+                    <li>아부다비 관제탑</li>
+                    <li>두바이 신공항</li>
+                    <li>호치민 Sunrise Plot V, 하노이 Wstern Bank Tower</li>
+                  </ul>
+                </div>
+                <img src="./images/content1/overview3.jpg" alt="">
+              </li>
+              <li data-aos="fade-left" data-aos-delay="150">
+                <div class="vision">
+                  <dl>
+                    <dt>친환경 에너지 사업의 리더</dt>
+                    <dd class="main_des">
+                      금호건설은 고유의 기술력으로 미래의 블루오션인 수처리와
+                      플랜트 분야에서 지속적인 수주와 기술투자를 진행하고
+                      있습니다.
+                    </dd>
+                    <dd class="sub_des">
+                      효율성을 높인 막여과식 해수담수화 시설을 개발했으며,
+                      열병합발전소와 화력발전소를 건설하는 등의 다양한
+                      시공경험을 토대로 풍력, 바이오가스, 원자력 발전 등 전
+                      분야에서 차별화된 경쟁력을 갖추어 나갈 것입니다.
+                    </dd>
+                  </dl>
+                  <ul class="vision__list">
+                    <li>
+                      국내 하수처리시설 건설기술인 KIDEA 공법으로 첫 장영실 상
+                      수상
+                    </li>
+                    <li>
+                      발전용량 2,000MW급 토건공사, 복합화력 건설공사,
+                      발전설비공사
+                    </li>
+                    <li>열병합발전소, 화학플랜트, 수처리, 바이오가스</li>
+                  </ul>
+                </div>
+                <img src="./images/content1/overview4.jpg" alt="">
+              </li>
+            </ul>
+          </section>
+
+          <!-- section.business -->
+          <section class="business">
+            <div class="business__container">
+              <h3 data-aos="fade-up">사업분야</h3>
+              <ul>
+                <li data-aos="flip-up" data-aos-delay="0" data-aos-duration="700">
+                  <a href="../sub2/sub2_1.html">
+                    <div class="img_container">
+                        <img
+                        src="./images/content1/business1.jpg"
+                        alt="">
+                    </div>
+                    <dl>
+                      <dt>건축사업</dt>
+                      <dd><i class="fa-solid fa-angles-right"></i></dd>
+                    </dl>
+                  </a>
+                </li>
+                <li data-aos="flip-up" data-aos-delay="100" data-aos-duration="700">
+                  <a href="../sub2/sub2_2.html">
+                    <div class="img_container">
+                      <img
+                        src="./images/content1/business2.jpg"
+                        alt="">
+                    </div>
+                    <dl>
+                      <dt>토목사업</dt>
+                      <dd><i class="fa-solid fa-angles-right"></i></dd>
+                    </dl>
+                  </a>
+                </li>
+                <li data-aos="flip-up" data-aos-delay="200" data-aos-duration="700">
+                  <a href="../sub2/sub2_3.html">
+                    <div class="img_container">
+                      <img
+                        src="./images/content1/business3.jpg"
+                        alt="">
+                    </div>
+                    <dl>
+                      <dt>주택사업</dt>
+                      <dd><i class="fa-solid fa-angles-right"></i></dd>
+                    </dl>
+                  </a>
+                </li>
+                <li data-aos="flip-up" data-aos-delay="300" data-aos-duration="700">
+                  <a href="../sub2/sub2_4.html">
+                    <div class="img_container">
+                      <img
+                        src="./images/content1/business4.jpg"
+                        alt="">
+                    </div>
+                    <dl>
+                      <dt>플랜트/환경사업</dt>
+                      <dd><i class="fa-solid fa-angles-right"></i></dd>
+                    </dl>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </article>
+      <!--  -->
       <footer id="footerArea">푸터영역</footer>
     </div>
 
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <!-- DONE: Swiper.js 삽입 -->
+    <script src="./js/swiper.min.js"></script>
+    <!-- DONE: gnb.js 삽입 (nav_new2.js) -->
+    <script src="./js/gnb.js"></script>
+    <!-- DONE: AOS 삽입 & init -->
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine',
+      });      
+    </script>
   </body>
 </html>
