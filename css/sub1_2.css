@@ -1,0 +1,119 @@
+/* #content */
+#content {
+  width: 100%;
+  margin: 0 auto;
+}
+#content section {
+  padding: 75px 0;
+}
+
+/* .intro */
+#content .content_area .intro {
+  width: 100%;
+}
+#content .content_area .intro__title {
+  text-align: center;
+  margin-bottom: 75px;
+}
+#content .content_area .intro__title h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+#content .content_area .intro__title .slogan {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.5;
+}
+#content .content_area .slogan strong {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+
+/*  */
+#content .history_scroll_wrap {
+
+}
+#content .slideMenu  {
+  width: 100%;
+  /* height: 60px; */
+}
+#content .slideMenu ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content .slideMenu ul li a {
+  /* width: 180px; */
+  width: calc(100% / 5);
+  line-height: 60px;
+  text-align: center;
+  font-size: .9rem;
+  font-weight: 500;
+  color: #999;
+  /* border-radius: 16px; */
+  transition: all .1s;
+}
+#content .slideMenu ul li a:is(:hover, .spy) {
+  background: #f65742;
+  color: #fff;
+  border-radius: 16px;
+}
+
+/* section.history_list */
+#content .history_list {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+/* #content .history_list.on {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+} */
+#content .history_list .img_container {
+  width: 700px;
+  overflow: hidden;
+}
+#content .history_list .img_container img {
+  width: 100%;
+  float: right;
+  border-radius: 30px;
+}
+#content .history_list.con2 .img_container img {
+  width: 80%;
+  margin-bottom: 50px;
+}
+#content .history_list .year {
+  width: 630px;
+
+}
+#content .history_list .year dl {
+  margin-bottom: 80px;
+}
+#content .history_list .year dt {
+  font-size: 3.13rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 40px;
+}
+#content .history_list .year dd {
+  font-size: 1.25rem;
+  color: #111;
+  margin-bottom: 10px;
+}
+#content .history_list .year dd .long {
+  display: inline-block;
+  width: 90%;
+}
+#content .history_list .year dd .month {
+  font-weight: 700;
+  margin-right: 15px;
+}
+#content .history_list .year dd .month.op0 {
+  opacity: 0;
+}
