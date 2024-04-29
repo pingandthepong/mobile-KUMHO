@@ -3,7 +3,7 @@
   justify-content: center;
   border: 1px solid #c5c5c5;
   box-sizing: border-box;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 #content .intro .tab_menu li {
   width: calc(100% / 3);
@@ -23,11 +23,11 @@
 
 /* .contlist 공통 */
 #content .contlist {
-  margin: 100px 0;
   display: none;
 }
 #content .contlist > div {
-  margin-bottom: 200px;
+  width: 90%;
+  margin: 0 auto 100px;
 }
 #content .intro .contlist > div > .title {
   font-size: 2.3rem;
@@ -39,233 +39,258 @@
   width: 100%;
 }
 
-/* .invest1 */
-#content .contlist.tab1 .invest1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-}
-/* .invest1 .iframe_box */
+/* .contlist.tab1 */
+/* .iframe_box */
 #content .contlist.tab1 .invest1 .iframe_box {
-  width: 685px;
-  height: 450px;
+  width: 100%;
+  aspect-ratio: 1 / 0.655;
   background: #f8f8f8;
-  border-radius: 50px;
-  padding: 55px 75px 85px;
+  border-radius: 20px;
+  padding: 10% 5%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-#content .contlist.tab1 .iframe_box .iframe_head::before {
+#content .contlist.tab1 .invest1 .iframe_head {
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#content .contlist.tab1 .invest1 .iframe_head::before {
   content: "";
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  background: #ef0010 url("../../common/images/KUMHO_Logo_KJH_icon_fff.png")
-    no-repeat 10px 13px;
-  background-size: 26px;
+  width: 10%;
+  aspect-ratio: 1 / 1;
+  background: #ef0010 url("../images/KUMHO_Logo_KJH_icon_fff.png") no-repeat 45% 55%;
+  background-size: 50%;
   border-radius: 50%;
-  vertical-align: bottom;
-  margin-right: 10px;
 }
-#content .contlist.tab1 .iframe_box .iframe_head {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 70px;
-}
-#content .contlist.tab1 .iframe_box .iframe_head span {
-  font-size: 1.25rem;
+#content .contlist.tab1 .invest1 .iframe_head span {
+  font-size: 1.2rem;
   font-weight: 400;
-  margin-left: 15px;
 }
-#content .contlist.tab1 .iframe_box .positive {
+#content .contlist.tab1 .invest1 .positive {
   color: #ef0010;
 }
-#content .contlist.tab1 .iframe_box .negative {
+#content .contlist.tab1 .invest1 .negative {
   color: #2c44fe;
 }
+
 /* .iframe_box .middle */
-#content .contlist.tab1 .iframe_box .middle {
-  width: 100%;
-  height: 70px;
+#content .contlist.tab1 .invest1 .middle {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 75px;
 }
-#content .contlist.tab1 .iframe_box .middle .last {
-  font-size: 4.38rem;
+#content .contlist.tab1 .invest1 .middle .last span {
+  font-size: 2.38rem;
   font-weight: 700;
   line-height: 1;
 }
-#content .contlist.tab1 .iframe_box .middle .changerate {
+#content .contlist.tab1 .invest1 .middle .changerate_box {
   display: flex;
-  gap: 20px;
-  
+  flex-direction: column;
 }
-#content .contlist.tab1 .iframe_box .middle .changerate li:first-of-type {
-  margin-right: 5px;
+@media screen and (min-width: 390px) {
+  #content .contlist.tab1 .invest1 .middle .changerate_box {
+    flex-direction: row;
+    gap: 8px;
+  }
 }
-#content .contlist.tab1 .iframe_box .middle .changerate li dl {
+@media screen and (orientation: landscape) {
+  #content .contlist.tab1 .invest1 .middle .last span {
+    font-size: 3rem;
+  }
+  #content .contlist.tab1 .invest1 .middle .changerate_box {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+#content .contlist.tab1 .invest1 .middle .changerate_box li {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-#content .contlist.tab1 .iframe_box .middle .changerate li dt {
-  font-size: 1.56rem;
+#content .contlist.tab1 .invest1 .middle .changerate_box li h4 {
+  font-size: 1rem;
   font-weight: 600;
 }
-#content .contlist.tab1 .iframe_box .middle .changerate li dd {
-  font-size: 1.25rem;
+@media screen and (min-width: 420px) and (orientation: landscape) {
+  #content .contlist.tab1 .invest1 .middle .changerate_box li h4 {
+    font-size: 1.35rem;
+  }
+}
+#content .contlist.tab1 .invest1 .middle .changerate_box span {
   display: flex;
   align-items: center;
   gap: 3px;
 }
-#content .contlist.tab1 .iframe_box .middle .changerate .positive::before {
+@media screen and (min-width: 420px) and (orientation: landscape) {
+  #content .contlist.tab1 .invest1 .middle .changerate_box span {
+    font-size: 1.14rem;
+  }
+}
+#content .contlist.tab1 .invest1 .middle .changerate_box .positive::before {
   content: "";
   display: inline-block;
-  background: url("../../mainimages/investment_positive.png");
+  background: url("../images/investment_positive.png");
   background-size: cover;
   width: 10px;
   height: 10px;
 }
-#content .contlist.tab1 .iframe_box .middle .changerate .negative::before {
+#content .contlist.tab1 .invest1 .middle .changerate_box .negative::before {
   content: "";
   display: inline-block;
-  background: url("../../mainimages/investment_negative.png");
+  background: url("../images/investment_negaitive.png");
   background-size: cover;
   width: 10px;
   height: 10px;
 }
+
 /* .iframe_box bottom */
-#content .contlist.tab1 .iframe_box .bottom {
+#content .iframe_box .bottom {
   width: 100%;
-  font-size: 1.25rem;
+  font-size: .9rem;
+  letter-spacing: -0.09rem;
   text-align: center;
 }
-#content .contlist.tab1 .iframe_box .bottom th {
+@media screen and (orientation: landscape) {
+  #content .iframe_box .bottom {
+    font-size: 1.15rem;
+  }
+}
+#content .iframe_box .bottom th {
   font-weight: 700;
 }
-#content .contlist.tab1 .iframe_box .bottom td.open {
+#content .iframe_box .bottom td.open {
   color: #ef0010;
 }
-#content .contlist.tab1 .iframe_box .bottom td.high {
+#content .iframe_box .bottom td.high {
   color: #2c44fe;
 }
-/* .invest1 .earning-rate */
-#content .contlist.tab1 .earning-rate {
-  width: 680px;
-  height: 657px;
+
+/*  .earning-rate */
+#content  .earning-rate {
+  width: 100%;
+  aspect-ratio: 100 / 97.5;
+  margin-top: 50px;
   background: #fff;
-  border: 2px solid #c5c5c5;
-  border-radius: 50px;
-  padding: 53px 58px 60px;
-  box-sizing: border-box;
+  border-radius: 20px;
+  font-size: 0.9rem;
 }
-#content .contlist.tab1 .earning-rate_head {
-  font-size: 2.5rem;
+#content  .earning-rate h4 {
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
-#content .contlist.tab1 .earning-rate_container {
+#content  .earning-rate_inner {
   border-top: 1px solid #c5c5c5;
   border-bottom: 1px solid #c5c5c5;
-  padding: 12px 0 30px;
+  padding: 3% 0 8%;
   position: relative;
 }
-#content .contlist.tab1 .earning-rate .tab_list {
-  letter-spacing: -1.2px;
+#content  .tab_list_wrapper {
+  letter-spacing: -0.1rem;
   font-weight: 500;
 }
-#content .contlist.tab1 .earning-rate .tab_list .tab_list_title {
+#content  .tab_list_wrapper .tab_list_title {
+  font-size: .8rem;
   float: left;
-  margin-right: 10px;
 }
-#content .contlist.tab1 .earning-rate .tab_list .tabs {
+#content  .tab_list_wrapper .tabs {
+  font-size: 0.8rem;
   float: right;
   display: flex;
   justify-content: space-between;
-  gap: 30px;
 }
-#content .contlist.tab1 .earning-rate .tab_list .tabs a {
+#content  .tab_list_wrapper .tabs a {
   padding: 0 10px;
 }
-#content .contlist.tab1 .earning-rate .notice_date {
+#content  .notice_date {
   position: absolute;
   right: 0;
-  top: 70px;
-  font-size: 0.8rem;
+  top: 8%;
+  font-size: 0.76rem;
   color: #666;
 }
-#content .contlist.tab1 .earning-rate .graph {
+#content  .graph {
   clear: both;
 }
-#content .contlist.tab1 .earning-rate .graph .canvas_wrap {
+#content  .graph .canvas_wrap {
   width: 100%;
-  height: 260px;
-  margin: 80px 0 20px;
+  aspect-ratio: 16 / 9;
+  margin: 15% 0 5%;
 }
-#content .contlist.tab1 .earning-rate .graph .chart {
+#content  .graph .chart {
   display: grid;
   place-items: center;
   color: #999;
 }
-#content .contlist.tab1 .earning-rate .graph .chart_wrap #earningRate {
-  width: 300px;
-}
-#content .contlist.tab1 .earning-rate .graph .button_bar {
+#content  .graph .button_bar {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 20px;
   background: #f2f3f8;
-  border-radius: 8px;
+  border-radius: 4px;
   box-sizing: border-box;
-  height: 26px;
+  padding: 3%;
 }
-#content .contlist.tab1 .earning-rate .graph .button_bar .checkbox {
+#content  .graph .button_bar .checkbox {
   display: flex;
   align-items: center;
+  gap: 4px;
 }
-#content .contlist.tab1 .earning-rate .graph .button_bar label {
-  font-size: 0.7rem;
+#content  .graph .button_bar label {
+  font-size: 1rem;
   font-weight: 600;
   display: flex;
   align-items: center;
+  gap: 8px;
 }
-#content .contlist.tab1 .earning-rate .graph .button_bar label small {
+#content  .graph .button_bar label small {
+  font-size: 0.9rem;
   font-weight: 300;
-  margin-left: 5px;
 }
-#content .contlist.tab1 .earning-rate .graph .notice_des {
-  font-size: 0.8rem;
+#content  .graph .notice_des {
+  font-size: 1rem;
   font-weight: 300;
+  letter-spacing: -0.09rem;
+  margin-top: 2.5%;
   color: #999;
-  margin-top: 15px;
-}
-#ci1 {
-  accent-color: #f65742;
 }
 #ci2 {
+  accent-color: #f65742;
+}
+#ci1 {
   accent-color: #3ffffc;
 }
 #ci3 {
   accent-color: #8afcaa;
 }
 
+/* .contlist.tab2 */
 /* sub1_3 table 공통 */
 #content .tabs table :is(th, td) {
   text-align: center;
 }
 
-/* .invest2 table */
-#content .contlist.tab1 :is(.invest2, .invest4) thead,
-#content .contlist.tab1 .invest4 tfoot tr > * {
+/* 2 table */
+#content .contlist.tab1 :is(2, 4) thead,
+#content .contlist.tab1 4 tfoot tr > * {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 76px;
 }
-#content .contlist.tab1 :is(.invest2, .invest4) tbody {
+#content .contlist.tab1 :is(2, 4) tbody {
   line-height: 80px;
 }
-#content .contlist.tab1 :is(.invest2, .invest4) table tbody :is(th, td) {
+#content .contlist.tab1 :is(2, 4) table tbody :is(th, td) {
   font-size: 1.25rem;
   text-align: center;
 }
@@ -275,10 +300,10 @@
 #content .tabs table tbody td {
   font-weight: 300;
 }
-#content .contlist.tab1 :is(.invest2, .invest4) tr {
+#content .contlist.tab1 :is(2, 4) tr {
   border-bottom: 1px solid #e5e5e5;
 }
-#content .contlist.tab1 :is(.invest2, .invest4) tr > *:not(:last-child) {
+#content .contlist.tab1 :is(2, 4) tr > *:not(:last-child) {
   border-right: 1px solid #e5e5e5;
 }
 #content .tabs table caption {
@@ -287,78 +312,78 @@
   padding: 10px;
   text-align: right;
 }
-#content :is(.tabs table caption, .invest4 .table_des p) {
+#content :is(.tabs table caption, 4 .table_des p) {
   font-size: 0.94rem;
   font-weight: 300;
   letter-spacing: -0.63px;
   color: #999;
 }
 
-/* .invest3 */
-#content .contlist.tab1 .invest3 {
+/* 3 */
+#content .contlist.tab1 3 {
   position: relative;
 }
-#content .contlist.tab1 .invest3 .category {
+#content .contlist.tab1 3 .category {
   position: absolute;
   left: 0;
   top: 120px;
   font-size: 1.5rem;
 }
-#content .contlist.tab1 .invest3 .graph {
+#content .contlist.tab1 3 .graph {
   width: 400px;
   margin: 150px auto 300px;
   position: relative;
 }
-#content .contlist.tab1 .invest3 .graph .label {
+#content .contlist.tab1 3 .graph .label {
   width: 400px;
   font-size: 1.35rem;
   position: absolute;
   left: -500px; 
 }
-#content .contlist.tab1 .invest3 .graph :is(.label1, .label5) {
+#content .contlist.tab1 3 .graph :is(.label1, .label5) {
   text-align: right;
   left: 500px;
   top: 200px;
 }
-#content .contlist.tab1 .invest3 .graph .label5 {
+#content .contlist.tab1 3 .graph .label5 {
   top: 50px;
 }
-#content .contlist.tab1 .invest3 .graph .label2 {
+#content .contlist.tab1 3 .graph .label2 {
   top: 300px;
 }
-#content .contlist.tab1 .invest3 .graph .label3 {
+#content .contlist.tab1 3 .graph .label3 {
   top: 150px;
 }
-#content .contlist.tab1 .invest3 .graph .label4 {
+#content .contlist.tab1 3 .graph .label4 {
   top: 0px;
 }
 
-#content .contlist.tab1 .invest3 .graph .label .per {
+#content .contlist.tab1 3 .graph .label .per {
   display: block;
   font-size: 3rem;
   font-weight: 700;
 }
-#content .contlist.tab1 .invest3 .graph .label .per::after {
+#content .contlist.tab1 3 .graph .label .per::after {
   content: "%";
 }
 
-#content .contlist.tab1 .invest3 .graph .label1 .per {
+#content .contlist.tab1 3 .graph .label1 .per {
   color: #ef0010;
 }
-#content .contlist.tab1 .invest3 .graph .label2 .per {
+#content .contlist.tab1 3 .graph .label2 .per {
   color: #56423D;
 }
-#content .contlist.tab1 .invest3 .graph .label3 .per {
+#content .contlist.tab1 3 .graph .label3 .per {
   color: #BEA6A0;
 }
-#content .contlist.tab1 .invest3 .graph .label4 .per {
+#content .contlist.tab1 3 .graph .label4 .per {
   color: #0097D7;
 }
-#content .contlist.tab1 .invest3 .graph .label5 .per {
+#content .contlist.tab1 3 .graph .label5 .per {
   color: #00D0FF;
 }
 
-#content .contlist.tab1 .invest3 .graph .label::before {
+#content .contlist.tab1 3 .graph .label::before {
   content: "";
   display: block;
   width: 30px;
@@ -369,29 +394,29 @@
   right: 0;
   z-index: 10;
 }
-#content .contlist.tab1 .invest3 .graph .label1::before {
+#content .contlist.tab1 3 .graph .label1::before {
   content: "";
   background: #ef0010;
   left: 0;
 }
-#content .contlist.tab1 .invest3 .graph .label2::before {
+#content .contlist.tab1 3 .graph .label2::before {
   content: "";
   background: #56423D;
 }
-#content .contlist.tab1 .invest3 .graph .label3::before {
+#content .contlist.tab1 3 .graph .label3::before {
   content: "";
   background: #BEA6A0;
 }
-#content .contlist.tab1 .invest3 .graph .label4::before {
+#content .contlist.tab1 3 .graph .label4::before {
   content: "";
   background: #0097D7;
 }
-#content .contlist.tab1 .invest3 .graph .label5::before {
+#content .contlist.tab1 3 .graph .label5::before {
   content: "";
   background: #00D0FF;
   left: 0;
 }
-#content .contlist.tab1 .invest3 .graph .label::after {
+#content .contlist.tab1 3 .graph .label::after {
   content: "";
   display: block;
   width: 400px;
@@ -401,7 +426,7 @@
   left: 0;
   top: 65%;
 }
-#content .contlist.tab1 .invest3 .date {
+#content .contlist.tab1 3 .date {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -411,7 +436,7 @@
 #invest3Graph .chartjs-render-monitor .chartjs-chart-labels {
   display: none;
 }
-#content .contlist.tab1 .invest3 .graph .chart2 {
+#content .contlist.tab1 3 .graph .chart2 {
   width: 500px;
   height: 500px;
   position: relative;
@@ -421,21 +446,21 @@
 /* ===== chartjs end ===== */
 
 
-/* .invest4 */
-#content .contlist.tab1 .invest4 {
+/* 4 */
+#content .contlist.tab1 4 {
 }
-#content .contlist.tab1 .invest4 td:last-child::after {
+#content .contlist.tab1 4 td:last-child::after {
   content: "%";
 }
-#content .contlist.tab1 .invest4 .table_des {
+#content .contlist.tab1 4 .table_des {
   position: relative;
   left: 0;
   top: -30px;
 }
-#content .contlist.tab1 .invest4 .table_des p::before {
+#content .contlist.tab1 4 .table_des p::before {
   content: "※ ";
 }
-#content .contlist.tab1 .invest4 .table_des p {
+#content .contlist.tab1 4 .table_des p {
   line-height: 2;
 }
 

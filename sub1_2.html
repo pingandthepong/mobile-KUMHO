@@ -165,29 +165,34 @@
                   
                   <!-- .invest1 (주가현황 & 수익률) -->
                   <div class="invest1">
-                    <div class="iframe_box" data-aos="fade-right">
+                    
+                    <!-- .iframe_box -->
+                    <div class="iframe_box">
                       <div class="iframe_head">금호건설<span>002990</span></div>
-
+                      <!-- .middle-->
                       <div class="middle">
-                        <dl class="last">
-                          <dt class="hidden">종가</dt>
-                          <dd class="positive">4,330</dd>
-                        </dl>
-                        <ul class="changerate">
+                        <!-- .last -->
+                        <div class="last">
+                          <h4 class="hidden">종가</h4>
+                          <span class="positive">5,130</span>
+                        </div>
+                        <!-- .changerate_box -->
+                        <ul class="changerate_box">
+                          <!-- 전일대비 -->
                           <li>
-                            <dl>
-                              <dt class="change_phrase">전일대비</dt>
-                              <dd class="change negative">55</dd>
-                            </dl>
+                            <h4 class="change_phrase">전일대비</h4>
+                            <div class="change"><span class="positive">30</span></div>
                           </li>
+                          <!-- 등락률 -->
                           <li>
-                            <dl>
-                              <dt class="change_phrase">등락률</dt>
-                              <dd class="change_per negative">1.2</dd>
-                            </dl>
+                            <h4 class="change_phrase">등락률</h4>
+                            <div class="change_per">
+                              <span class="positive">0.59</span>
+                            </div>
                           </li>
                         </ul>
                       </div>
+                      <!-- .bottom -->
                       <table class="bottom">
                         <thead>
                           <tr>
@@ -200,48 +205,46 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td class="data prev_close">4,330</td>
-                            <td class="data open">4,330</td>
-                            <td class="data high">6,730</td>
-                            <td class="data low">4,315</td>
-                            <td class="data volumn">46,383</td>
+                            <td class="data prev_close">161,300</td>
+                            <td class="data open">162,200</td>
+                            <td class="data high">165,700</td>
+                            <td class="data low">158,200</td>
+                            <td class="data volumn">503,948</td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
 
                     <!-- .earning-rate -->
-                    <div class="earning-rate" data-aos="fade-left" data-aos-delay="250">
-                      <div class="earning-rate_head">수익률</div>
-                      <div class="earning-rate_container">
-                        <div class="tab_list">
+                    <div class="earning-rate">
+                      <h4>수익률</h4>
+                      <div class="earning-rate_inner">
+                        <div class="tab_list_wrapper">
                           <div class="tab_list_title">적용기간</div>
                           <ul class="tabs">
                             <li><a href="javascript:void(0)">1주</a></li>
                             <li><a href="javascript:void(0)">1개월</a></li>
                             <li><a href="javascript:void(0)">3개월</a></li>
                             <li><a href="javascript:void(0)">6개월</a></li>
-                            <li>
-                              <a href="javascript:void(0)" class="active">1년</a>
-                            </li>
+                            <li><a href="javascript:void(0)" class="active">1년</a></li>
                             <li><a href="javascript:void(0)">3년</a></li>
                           </ul>
                         </div>
                         <div class="notice_date">기준일: 24. 2. 23</div>
                         <div class="graph">
                           <div class="canvas_wrap">
-                            <canvas class="chart" id="earningRate"></canvas>
+                            <canvas class="chart" id="earningRate">(차트영역)</canvas>
                           </div>
                           <ul class="button_bar">
                             <li class="checkbox">
-                              <input type="checkbox" checked id="ci1">
-                              <label for="ci1"
+                              <input type="checkbox" checked id="ci2">
+                              <label for="ci2"
                                 >기준가격(NAV) <small>-2.19%(9,930.47원)</small>
                               </label>
                             </li>
                             <li class="checkbox">
-                              <input type="checkbox" checked id="ci2">
-                              <label for="ci2"
+                              <input type="checkbox" checked id="ci1">
+                              <label for="ci1"
                                 >시장가격(종가) <small>-2.19%(9,930.47원)</small>
                               </label>
                             </li>
@@ -253,9 +256,9 @@
                             </li>
                           </ul>
                           <p class="notice_des">
-                            수익률 그래프는 상품 유형에 상관없이 분배금 재투자를
-                            가정한 수익률 기준입니다. (수익률 그래프는 상장일 이후로
-                            조회 가능합니다.)
+                            수익률 그래프는 상품 유형에 상관없이 분배금 재투자를 가정한
+                            수익률 기준입니다. (수익률 그래프는 상장일 이후로 조회
+                            가능합니다.)
                           </p>
                         </div>
                       </div>
