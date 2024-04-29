@@ -513,8 +513,11 @@
 /* .tab3 */
 #content .contlist.tab3 {  
 }
+#content .contlist.tab3 .financial {
+  margin-bottom: 0;
+}
 #content .contlist.tab3 .financial :is(.financial_position, .financial_income) {
-  margin: 80px auto;
+  margin: 80px auto 0;
 }
 #content .contlist.tab3 .financial .chart_inner {
   height: 560px;
