@@ -406,14 +406,46 @@
 
 /* .invest4 */
 #content .contlist.tab1 .invest4 {
+  overflow-x: scroll;
+  padding-bottom: 10%;
+  margin-bottom: 0;
+}
+#content .contlist.tab1 .invest4 .title {
+  width: 200%;
+}
+#content .contlist.tab1 .invest4 .title span {
+  position: sticky;
+  left: 0;
+  top: 0;
+
+}
+#content .contlist.tab1 .invest4 table {
+  width: 200%;
+  position: relative;
+}
+#content .contlist.tab1 .invest4 table tr :is(th:first-child, td:first-child):not(th:last-of-type) {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background: #fff;
+  border-right: none;
+}
+#content .contlist.tab1 .invest4 table tr :is(th:first-child, td:first-child):not(th:last-of-type)::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #e5e5e5;
+  position: absolute;
+  right: 0;
+  top: 0;
+
 }
 #content .contlist.tab1 .invest4 td:last-child::after {
   content: "%";
 }
 #content .contlist.tab1 .invest4 .table_des {
-  position: relative;
-  left: 0;
-  top: -30px;
+  margin-top: 5%;
 }
 #content .contlist.tab1 .invest4 .table_des p::before {
   content: "※ ";
