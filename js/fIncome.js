@@ -14,7 +14,7 @@ Highcharts.chart("fIncome", {
     },
     labels: {
       style: {
-        fontSize: "19px",
+        fontSize: "12px",
         color: "#666",
       },
     },
@@ -29,7 +29,7 @@ Highcharts.chart("fIncome", {
         return Highcharts.numberFormat(this.value, 0, "", ",");
       },
       style: {
-        fontSize: "15px",
+        fontSize: "10px",
       },
     },
   },
@@ -38,12 +38,12 @@ Highcharts.chart("fIncome", {
   },
   tooltip: {
     style: {
-      fontSize: "19px",
-      padding: "10px",
+      fontSize: "14px",
+      padding: "6px",
     },
     // tooltip의 formatter 함수 수정
     formatter: function () {
-      return `<span style="font-size: 19px">${this.x}</span><br/><span style="color:${this.series.color}">\u25CF</span>${this.series.name}: <b>${Highcharts.numberFormat(this.y, 0, "'", ",")}</b>`;
+      return `<span style="font-size: 16px">${this.x}</span><br/><span style="color:${this.series.color}">\u25CF</span>${this.series.name}: <b>${Highcharts.numberFormat(this.y, 0, "'", ",")}</b>`;
     },
   },
   plotOptions: {
@@ -58,7 +58,7 @@ Highcharts.chart("fIncome", {
         inside: false, // 레이블을 열 안쪽에 표시
         color: "#333", // 레이블 색상 설정
         style: {
-          fontSize: "15px",
+          fontSize: "10px",
           fontWeight: "600",
           textOutline: "none", // 텍스트 외곽선 제거
         },
@@ -75,16 +75,16 @@ Highcharts.chart("fIncome", {
     x: 0,
     y: 0,
     symbolRadius: 1,
-    symbolWidth: 18,
-    symbolHeight: 18,
+    symbolWidth: 12,
+    symbolHeight: 12,
     symbol: function () {
       return "rect";
     },
     itemStyle: {
-      fontSize: "16px",
+      fontSize: "14px",
     },
     itemMarginTop: 0,
-    itemMarginBottom: 50,
+    itemMarginBottom: 10,
     backgroundColor:
       (Highcharts.theme && Highcharts.theme.background2) || "white",
   },
