@@ -520,7 +520,7 @@
   margin: 80px auto 0;
 }
 #content .contlist.tab3 .financial .chart_inner {
-  height: 560px;
+  height: 460px;
   border: 1px solid #c5c5c5;
   position: relative;
 }
@@ -541,6 +541,9 @@
 /* ===== .highcharts-figure start ===== */
 #content .contlist.tab3 .financial :is(#graph1, #graph2) .highcharts-figure {
   width: 100%;
+}
+#fPosition, #fIncome {
+  height: 300px;
 }
 /* highcharts-point-hover 시 배경색 제거 */
 .highcharts-crosshair.highcharts-crosshair-category {
