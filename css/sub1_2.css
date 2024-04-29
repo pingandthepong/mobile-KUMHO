@@ -521,29 +521,32 @@
   margin: 80px auto 0;
 }
 #content .contlist.tab3 .financial .chart_inner {
-  height: 460px;
   border: 1px solid #c5c5c5;
   position: relative;
+  .chart_inner_title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 30px 0;
+  }
+  .chart_inner_title + p {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #999;
+  }
 }
-#content .contlist.tab3 .financial .chart_inner_title {
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-align: center;
-  margin: 40px 0;
-}
-#content .contlist.tab3 .financial .chart_inner_title + p {
-  position: absolute;
-  right: 0;
-  top: -30px;
-  font-size: 0.9rem;
-  font-weight: 300;
-  color: #999;
-}
+
 /* ===== .highcharts-figure start ===== */
 #content .contlist.tab3 .financial :is(#graph1, #graph2) .highcharts-figure {
   width: 100%;
 }
-#fPosition, #fIncome {
+#fPosition {
+  height: 250px;
+}
+#fIncome {
   height: 300px;
 }
 /* highcharts-point-hover 시 배경색 제거 */

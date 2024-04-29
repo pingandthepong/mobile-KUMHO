@@ -52,7 +52,7 @@ Highcharts.chart("fIncome", {
         borderWidth: 0,
         groupPadding: 0.1,
       },
-      // pointPadding: 0.2,
+      pointPadding: 0,
       dataLabels: {
         enabled: true,
         inside: false, // 레이블을 열 안쪽에 표시
@@ -69,14 +69,14 @@ Highcharts.chart("fIncome", {
     },
   },
   legend: {
-    align: "right",
+    align: "center",
     verticalAlign: "top",
     layout: "horizontal",
     x: 0,
     y: 0,
     symbolRadius: 1,
-    symbolWidth: 12,
-    symbolHeight: 12,
+    symbolWidth: 14,
+    symbolHeight: 14,
     symbol: function () {
       return "rect";
     },
