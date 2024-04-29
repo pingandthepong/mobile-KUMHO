@@ -1,0 +1,134 @@
+#content {
+  .content_area {
+    background: #f8f8f8;
+  }
+  section {
+    width: 90%;
+    margin: 0 auto;
+
+  }
+  section.contact {
+    padding: 30px 0 50px;
+    #map {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: 1px solid #999;
+    }
+    
+  }
+  section.contact_us {
+    padding: 0;
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #2C44F2;
+      margin-bottom: 10%;
+    }
+    h3 + p {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 20%;
+      text-align: center;
+    }
+    .phone, .public {
+      background: #fff;
+      /* padding: 100px 100px 100px 0; */
+      position: relative;
+    }
+    .contactus_title {
+      width: 100%;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #2C44F2;
+      line-height: 5;
+      border-bottom: 1px solid #f8f8f8;
+      margin-bottom: 10%;
+    }
+    .phone dd, .public table {
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.75;
+    }
+  }
+}
+
+#content .contact_us .phone {
+  border-radius: 30px 30px 0 0;
+  margin-bottom: 1px;
+  padding-bottom: 10%;
+  .title {
+    display: block;
+    font-weight: 600;
+  }
+  dd {
+    margin-bottom: 12.5%;
+  }
+  .caution {
+    width: 90%;
+    margin: 20% auto;
+    font-size: 1.1rem;
+    letter-spacing: -.09rem;
+    &::before {
+      content: "※ ";
+    }
+    a {
+      display: inline-block;
+      background: #2C44F2;
+      color: #fff;
+      padding: 6px 24px;
+      border-radius: 30px;
+      margin-top: 10px;
+    }
+  }
+}
+
+#content .contact_us .public {
+  border-radius: 0 0 30px 30px;
+}
+
+#content .contact_us .public table tr:first-of-type {
+  height: 130px;
+}
+#content .contact_us .public table tr:nth-of-type(2) {
+  height: 180px;
+}
+#content .contact_us .public table th {
+  width: 150px;
+  text-align: left;
+  vertical-align: top;
+}
+#content .contact_us .public table td {
+  vertical-align: top;
+}
+#content .contact_us .public .blue_bus {
+  color: #397CC8;
+  font-weight: 500;
+}
+#content .contact_us .public .green_bus {
+  color: #67C54B;
+  font-weight: 500;
+}
+#content .contact_us .public .subway_1::before {
+  content: "1";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #0d347f;
+  color: #fff;
+  margin-right: 5px;
+}
+#content .contact_us .print {
+  width: 300px;
+  font-size: 1.25rem;
+  background: #252525;
+  color: #fff;
+  text-align: center;
+  line-height: 75px;
+  border-radius: 16px;
+  margin: 75px auto ;
+
+}
