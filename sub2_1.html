@@ -153,39 +153,42 @@
 
           <section class="intro2">
             <div class="intro2__title">
-              <h3>Architecture as a <span class="accent">Work of Art</span></h3>
+              <h3>Architecture as a <span class="accent"><span class="before_circle">W</span>ork of Art</span></h3>
               <a class="more_btn" href="javascript:void(0)">포트폴리오 보기</a>
             </div>
-            <ul class="intro2__container">
-              <li>
-                <dl>
-                  <dt>Sunrise Plot V</dt>
-                  <dd>189,269㎡</dd>
-                </dl>
-                <div class="img"><img src="./images/content1/intro2_3.jpg" alt=""></div>
-              </li>
-              <li>
-                <dl>
-                  <dt>Vietnam, Time Square</dt>
-                  <dd>88,641㎡</dd>
-                </dl>
-                <div class="img"><img src="./images/content1/intro2_4.jpg" alt=""></div>
-              </li>
-              <li>
-                <dl>
-                  <dt>Al Makoum Internation Airport</dt>
-                  <dd>66,000㎡</dd>
-                </dl>
-                <div class="img"><img src="./images/content1/intro2_2.jpg" alt=""></div>
-              </li>
-              <li>
-                <dl>
-                  <dt>Abu Dhabi International airport</dt>
-                  <dd>7,300㎡</dd>
-                </dl>
-                <div class="img"><img src="./images/content1/intro2_1.jpg" alt=""></div>
-              </li>
-            </ul>
+            
+            <div class="swiper-container swiper2">
+              <ul class="intro2__container swiper-wrapper">
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>Sunrise Plot V</dt>
+                    <dd>189,269㎡</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_1_intro2_1.jpg" alt=""></div>
+                </li>
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>Vietnam, Time Square</dt>
+                    <dd>88,641㎡</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_1_intro2_2.jpg" alt=""></div>
+                </li>
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>Al Makoum Internation Airport</dt>
+                    <dd>66,000㎡</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_1_intro2_3.jpg" alt=""></div>
+                </li>
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>Abu Dhabi International airport</dt>
+                    <dd>7,300㎡</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_1_intro2_4.jpg" alt=""></div>
+                </li>
+              </ul>
+            </div>
           </section>
           <section class="intro3">
             <div class="intro3_txt">
@@ -346,6 +349,10 @@
         slidesPerView: 3.2,
         initialSlide: 0,
       });
+
+      var swiper2 = new Swiper('.swiper2', {
+        slidesPerView: 2.3,
+      }); 
     </script>
     
   </body>

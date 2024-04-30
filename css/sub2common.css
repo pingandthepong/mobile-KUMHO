@@ -61,6 +61,21 @@
 #content {
   width: 100%;
   margin: 0 auto;
+  .more_btn {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #2C44F2;
+    color: #2C44F2;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 0;
+    font-size: 1rem;
+    transition: all .25s ease-out;
+    &:active {
+      background: #2C44F2;
+      color: #fff;
+    }
+  }
 }
 #content section {
   padding: 0;
@@ -137,6 +152,98 @@
   }
 }
 
+/* .intro2 */
+#content .content_area .intro2 {
+  width: 100%;
+  padding: 10% 0;
+
+  .intro2__title {
+    width: 100%;
+    .more_btn {
+      width: auto;
+      position: absolute;
+      left: 10%;
+      bottom: -20%;
+    }
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      position: relative;
+      .accent {
+        display: block;
+        font-size: 2.3rem;
+        font-weight: 700;
+        letter-spacing: -.1rem;
+
+        .before_circle {
+          position: relative;
+        }
+        .before_circle::before {
+          content: "";
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #f65742;
+          position: absolute;
+          left: -30%;
+          top: 0;
+          z-index: -10;
+        }
+        /* TODO: 스크롤 방향에 따라 addClass('on') */
+        .before_circle.on::before {
+          transform: scale(5);
+        }
+      }
+    }
+  }
+
+  .swiper-container.swiper2 {
+    width: 100%;
+  }
+  .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+
+  }
+  
+  .swiper-slide {
+    text-align: center;
+
+    dt {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    dd {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .img {
+      width: 100%;
+      border-radius: 30px 30px 0 0;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+  }
+ 
+}
 
 
+#content .content_area .intro2__container li:nth-child(2) dl {
+  /* transform: translateY(calc(100% - 10%)); */
+  /* margin: 10% 0; */
+}
+#content .content_area .intro2__container li:nth-child(3) dl {
+  /* transform: translateY(calc(100% - 20%)); */
+  /* margin: 20% 0; */
+}
+#content .content_area .intro2__container li:nth-child(4) dl {
+  /* transform: translateY(calc(100% - 30%)); */
+  /* margin: 30% 0; */
+}
 
