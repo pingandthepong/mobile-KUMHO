@@ -8,9 +8,15 @@ var swiper2 = new Swiper('.swiper2', {
 }); 
 
 var swiper3 = new Swiper('.swiper3', {
-  effect: "cards",
+  effect: "coverflow",
   grabCursor: true,
-  // slidesPerView: 1.2,
-  // centeredSlide: true,
-  // spaceBetween: 20,
+  centeredSlides: true,
+  slidesPerView: "1.5",
+  coverflowEffect: {
+    rotate: 75,
+    stretch: 0,
+    depth: 250,
+    modifier: 1,
+    slideShadows: true,
+  },
 })
