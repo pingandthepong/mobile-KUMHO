@@ -24,7 +24,6 @@
 /* .sub_nav (.swiper1) */
 .sub_nav.swiper-container.swiper1 {
   width: 100%;
-  border-bottom: 1px solid #f5f5f5;
 }
 .sub_nav li.swiper-slide {
   text-align: center;
@@ -34,25 +33,28 @@
   font-size: 1rem;
   color: #666;
   line-height: 55px;
+  &.current {
+    color: #f65742;
+    font-weight: 500;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #f65742;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+  }
+  &.current::after {
+    opacity: 1;
+  }
 }
-.sub_nav li a.current {
-  color: #f65742;
-  font-weight: 500;
-}
-.sub_nav li a::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: #f65742;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-}
-.sub_nav li a.current::after {
-  opacity: 1;
-}
+
+
+
 
 /* #content */
 #content {
@@ -96,8 +98,12 @@
       font-size: 1.1rem;
       font-weight: 200;
       line-height: 1.5;
-      letter-spacing: -0.09rem;
-      margin-bottom: 20%;
+      letter-spacing: -0.085rem;
+      margin-bottom: 30px;
+      span {
+        display: block;
+        margin-bottom: 5%;
+      }
     }
     .sector {
       &::before {
@@ -105,8 +111,8 @@
         display: block;
         width: 25%;
         height: 1px;
-        background: rgba(255,255,255,.5);
-        margin: 0 auto 15%;
+        background: rgba(255,255,255,.7);
+        margin: 0 auto 30px;
       }
     }
   }
