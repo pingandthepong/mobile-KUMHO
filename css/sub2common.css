@@ -155,7 +155,7 @@
 /* .intro2 */
 #content .content_area .intro2 {
   width: 100%;
-  padding: 10% 0;
+  padding: 10% 0 0;
 
   .intro2__title {
     width: 100%;
@@ -206,7 +206,6 @@
     height: 100%;
     display: flex;
     align-items: end;
-
   }
   
   .swiper-slide {
@@ -230,7 +229,104 @@
       }
     }
   }
- 
 }
 
 
+/* .intro3 */
+#content .content_area .intro3 {
+  padding: 20% 0;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.5);
+  }
+
+  .intro3_wrap {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+
+    .intro3_txt {
+      padding: 5% 0 10%;
+      
+      h3 {
+        font-size: 1.6rem;
+        line-height: 1.75;
+        margin-bottom: 30px;
+        letter-spacing: -.1rem;
+        color: #fff;
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 1px;
+          height: 50px;
+          background: rgba(255,255,255,.9);
+          margin: 30px auto;
+        }
+      }
+
+    
+      p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        text-align: justify;
+        line-height: 1.75;
+        margin-bottom: 10%;
+      }
+    
+      .more_btn {
+        width: 60%;
+        margin: 0 auto;
+        padding: 12px 28px;
+      }
+  }
+  }
+
+  .swiper3 {
+    width: 100%;
+    padding: 10% 0;
+  
+    .swiper-slide {
+      width: 100%;
+      text-align: center;
+  
+      .img_container {
+        width: 100%;
+        height: 240px;
+        border-radius: 20px;
+        overflow: hidden;
+        background: #d9d9d9;
+  
+        img {
+          width: 100%;
+        }
+      }
+  
+      dl {
+        font-size: 1.25rem;
+        text-shadow: 1px 1px 3px rgba(0,0,0,.6);
+        display: flex;
+        flex-direction: column-reverse;
+        
+        dt {
+          font-weight: 700;
+        }
+        dd {
+          font-weight: 300;
+          margin: 20px 0 10px;
+        }
+      }
+      
+    }
+  }
+}
