@@ -11,12 +11,12 @@ var swiper3 = new Swiper('.swiper3', {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: "1.5",
+  slidesPerView: "1.1",
   coverflowEffect: {
     rotate: 75,
-    stretch: 0,
-    depth: 250,
-    modifier: 1,
+    stretch: 10,
+    depth: 500,
+    modifier: 2,
     slideShadows: true,
   },
 })
