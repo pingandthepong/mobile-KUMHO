@@ -24,6 +24,7 @@
 /* .sub_nav (.swiper1) */
 .sub_nav.swiper-container.swiper1 {
   width: 100%;
+  background: #fff;
 }
 .sub_nav li.swiper-slide {
   text-align: center;
@@ -66,6 +67,17 @@
 }
 
 /* .intro */
+@keyframes slideup {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 #content .content_area .intro {
   width: 100%;
   position: relative;
@@ -87,12 +99,15 @@
     .business {
       display: block;
       margin-bottom: 2.5%;
+      animation: slideup .75s ease-out;
     }
     h3 {
       font-size: 2rem;
       font-weight: 600;
       color: #fff;
       margin-bottom: 10%;
+      animation: slideup .75s ease-out;
+      animation-delay: .25s;
     }
     .slogan {
       font-size: 1.1rem;
@@ -100,12 +115,16 @@
       line-height: 1.5;
       letter-spacing: -0.085rem;
       margin-bottom: 30px;
+      animation: slideup .75s ease-out;
+      animation-delay: .5s;
       span {
         display: block;
         margin-bottom: 5%;
       }
     }
     .sector {
+      animation: slideup .75s ease-out;
+      animation-delay: .75s;
       &::before {
         content: '';
         display: block;
