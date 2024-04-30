@@ -156,36 +156,39 @@
               <h3>Airport as a <span class="accent">Work of Art</span></h3>
               <a class="more_btn" href="javascript:void(0)">포트폴리오 보기</a>
             </div>
-            <ul class="intro2__container">
-              <li>
-                <dl>
-                  <dt>무안공항</dt>
-                  <dd>2545454.55㎡</dd>
-                </dl>
-                <div class="img"><img src="./images/content2/intro2_1.jpg" alt=""></div>
-              </li>
-              <li>
-                <dl>
-                  <dt>인천국제공항</dt>
-                  <dd>9.21km</dd>
-                </dl>
-                <div class="img"><img src="./images/content2/intro2_2.jpg" alt=""></div>
-              </li>
-              <li>
-                <dl>
-                  <dt>위례신도시</dt>
-                  <dd>2,065,731㎡</dd>
-                </dl>
-                <div class="img"><img src="./images/content2/intro2_3.jpg" alt=""></div>
-              </li>
-              <li>
-                <dl>
-                  <dt>베트남 티엔탄 상수처리장</dt>
-                  <dd>100,000㎥/day</dd>
-                </dl>
-                <div class="img"><img src="./images/content2/intro2_4.jpg" alt=""></div>
-              </li>
-            </ul>
+
+            <div class="swiper-container swiper2">
+              <ul class="intro2__container swiper-wrapper">
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>무안공항</dt>
+                    <dd>2545454.55㎡</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_2_intro2_1.jpg" alt=""></div>
+                </li>
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>인천국제공항</dt>
+                    <dd>9.21km</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_2_intro2_2.jpg" alt=""></div>
+                </li>
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>위례신도시</dt>
+                    <dd>2,065,731㎡</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_2_intro2_3.jpg" alt=""></div>
+                </li>
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>베트남 티엔탄<br> 상수처리장</dt>
+                    <dd>100,000㎥/day</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_2_intro2_4.jpg" alt=""></div>
+                </li>
+              </ul>
+            </div>
           </section>
           <section class="intro3">
             <div class="intro3_txt">
@@ -345,6 +348,10 @@
         slidesPerView: 3.2,
         initialSlide: 0,
       });
+      
+      var swiper = new Swiper('.swiper2', {
+        slidesPerView: 2.3,
+      })
     </script>
     
   </body>
