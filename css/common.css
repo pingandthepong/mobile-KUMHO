@@ -253,7 +253,8 @@ label {
   opacity: 0;
   background: #fff;
   z-index: 20;
-  overflow-x: scroll;
+  overflow-y: auto;
+  max-height: calc(100vh);
 }
 
 #gnb .mainMenu {
@@ -302,7 +303,7 @@ label {
 
 #gnb .sns {
   padding: 0 10%;
-  margin-top: 40px;
+  margin: 40px 0;
   display: flex;
   align-items: center;
   gap: 25px;
