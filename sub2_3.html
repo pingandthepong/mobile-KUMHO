@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/sub2common.css">
-    <link rel="stylesheet" href="./css/sub2_1.css">
+    <link rel="stylesheet" href="./css/sub2_3.css">
 
     <script src="./js/prefixfree.min.js"></script>
     <!-- DONE: Font Awesome 삽입 -->
@@ -154,40 +154,43 @@
 
           <section class="intro2">
             <div class="intro2__title">
-              <h3>House as a <span class="accent">Work of Art</span></h3>
+              <h3>House as a <span class="accent"><span class="before_circle">W</span>ork of Art</span></h3>
               <a class="more_btn" href="javascript:void(0)">포트폴리오 보기</a>
             </div>
-            <ul class="intro2__container">
-              <li>
-                <dl>
-                  <dt>세종리첸시아파밀리에</dt>
-                  <dd>1,567세대</dd>
-                </dl>
-                <div class="img"><img src="./images/content3/intro2_1.jpg" alt=""></div>
-              </li>
-              <li>
-                <dl>
-                  <dt>DMC 금호 리첸시아</dt>
-                  <dd>450세대</dd>
-                </dl>
-                <div class="img"><img src="./images/content3/intro2_2.jpg" alt=""></div>
-              </li>
-              <li>
-                <dl>
-                  <dt>여의도 금호 리첸시아</dt>
-                  <dd>448세대</dd>
-                </dl>
-                <div class="img"><img src="./images/content3/intro2_3.jpg" alt=""></div>
-              </li>
-              <li>
-                <dl>
-                  <dt>어울림</dt>
-                  <dd>10만세대</dd>
-                </dl>
-                <div class="img"><img src="./images/content3/intro2_4.jpg" alt=""></div>
-              </li>
+
+            <div class="swiper-container swiper2">
+              <ul class="intro2__container swiper-wrapper">
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>세종리첸시아<br>파밀리에</dt>
+                    <dd>1,567세대</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_3_intro2_1.jpg" alt=""></div>
+                </li>
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>DMC 금호 리첸시아</dt>
+                    <dd>450세대</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_3_intro2_2.jpg" alt=""></div>
+                </li>
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>여의도 금호 리첸시아</dt>
+                    <dd>448세대</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_3_intro2_3.jpg" alt=""></div>
+                </li>
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>어울림</dt>
+                    <dd>10만세대</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_3_intro2_4.jpg" alt=""></div>
+                </li>
               
-            </ul>
+              </ul>
+            </div>
           </section>
           <section class="intro3">
             <div class="intro3_txt">
@@ -342,12 +345,7 @@
         easing: 'ease-in-out-sine',
       });      
     </script>
-    <script>
-      var swiper1 = new Swiper(".swiper1", {
-        slidesPerView: 3.2,
-        initialSlide: 0,
-      });
-    </script>
+    <script src="./js/sub2Swiper.js"></script>
     
   </body>
 </html>
