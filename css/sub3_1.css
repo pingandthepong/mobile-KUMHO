@@ -1,3 +1,266 @@
+/* #content */
+#content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* .intro */
+#content .content_area .intro {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
+#content .content_area .intro__title {
+  width: 1600px;
+  margin: 0 auto;
+  color: #fff;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(calc(-40% - 40px));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-40%);
+  }
+}
+#content .content_area .intro__title .title_left {
+  transform: translateY(-40%);
+}
+#content .content_area .intro:hover .title_left {
+  animation: fadeInDown 1s;
+}
+#content .content_area .intro__title h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: #f65742;
+}
+#content .content_area .intro__title :is(.slogan, .des) {
+  letter-spacing: -0.1px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+#content .content_area .intro__title .slogan {
+  font-size: 4.06rem;
+}
+#content .content_area .intro__title .title_right {
+  width: 700px;
+  position: absolute;
+  right: 0;
+  bottom: -230px;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    bottom: calc(-230px - 80px);
+  }
+  to {
+    opacity: 1;
+    bottom: -230px;
+  }
+}
+#content .content_area .intro:hover .intro__title .title_right {
+  animation: fadeInUp 1s;
+}
+#content .content_area .intro__title .des {
+  font-size: 1.5rem;
+}
+#content .content_area .intro__title .des:not(:first-of-type) {
+  margin-top: 24px;
+}
+#content .content_area .intro__title .des .accent {
+  font-weight: 500;
+}
+
+/* .history */
+#content .content_area .history {
+  height: 775px;
+  background: #f1f1f1;
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+#content .content_area .history h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 80px;
+}
+#content .content_area .history .tab_menu {
+  width: 1400px;
+  height: 96px;
+  margin: 0 auto;
+  border-bottom: 1px solid #d6d6d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content .content_area .history .tab_menu .tab {
+  font-size: 3.12rem;
+  font-weight: 600;
+  padding: 0 40px 24px;
+  color: #c8c7c7;
+}
+#content .content_area .history .tab_menu .tab.on,
+#content .content_area .history .tab_menu .tab:hover {
+  color: #f65742;
+}
+#content .content_area .history .tab_menu li .tab {
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+#content .content_area .history .tab_menu li .tab::before {
+  content: "";
+  display: block;
+  /* width: calc(100% + 40px); */
+  width: 0;
+  height: 3px;
+  background: #f65742;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+#content .content_area .history .tab_menu li .tab.on::before {
+  content: "";
+  width: calc(100% + 40px);
+}
+#content .content_area .contlist {
+  width: 1400px;
+  margin: 100px auto;
+  display: none;
+}
+#content .content_area .contlist ul {
+  display: flex;
+  justify-content: center;
+}
+#content .content_area .contlist ul li {
+  width: auto;
+  box-sizing: border-box;
+}
+#content .content_area .contlist ul li:not(:last-child) {
+  margin-right: 100px;
+}
+#content .content_area .contlist dt {
+  font-size: 1.88rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#content .content_area .contlist dd {
+  color: #666;
+  font-weight: 300;
+  display: flex;
+  margin-bottom: 10px;
+}
+#content .content_area .contlist dd .month {
+  color: #111;
+  display: inline-block;
+  margin-right: 8px;
+}
+#content .content_area .history :is(#y2000, #y1990, #y1980) {
+  display: none;
+}
+
+/* .research */
+#content .content_area .research {
+  width: 1920px;
+  margin: 0 auto;
+}
+#content .content_area .research ul {
+  counter-reset: counter;
+}
+#content .content_area .research li {
+  display: flex;
+}
+#content .content_area .research li:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+#content .content_area .research li :is(.txt_container, .img_container) {
+  width: 50%;
+  transition: all 0.35s ease-out;
+}
+#content .content_area .research li .txt_container {
+  box-sizing: border-box;
+  position: relative;
+}
+#content .content_area .research ul li .txt_container {
+  color: #fff;
+}
+#content .content_area .research ul li:nth-child(2) .txt_container {
+  color: #2c44f2;
+}
+#content .content_area .research ul li:nth-child(1) .txt_container {
+  background: #2c44f2;
+}
+#content .content_area .research ul li:nth-child(2) .txt_container {
+  background: #f8f8f8;
+}
+#content .content_area .research ul li:nth-child(3) .txt_container {
+  background: #4e55f1;
+}
+#content .content_area .research ul li:nth-child(4) .txt_container {
+  background: #f65742;
+}
+#content .content_area .research ul li:nth-child(5) .txt_container {
+  background: #bfb1a3;
+}
+#content .content_area .research li .txt_container .sub_title {
+  display: block;
+  font-size: 1.06rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+#content .content_area .research li .txt_container .sub_title::after {
+  counter-increment: counter;
+  content: " 0" counter(counter);
+}
+#content .content_area .research li .txt_container dl {
+  height: 100%;
+}
+#content .content_area .research li .txt_container dt {
+  margin-top: -50px;
+  font-size: 2.31rem;
+  font-weight: 600;
+}
+#content .content_area .research li .txt_container dd {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+#content .content_area .research li .img_container {
+  overflow: hidden;
+}
+#content .content_area .research li .img_container img {
+  object-fit: cover;
+}
+
+/* .project */
+#content .content_area .project {
+  background: #f2f2f2;
+  text-align: center;
+  /* margin 병합을 위한 ov:h 코드 */
+  overflow: hidden;
+}
+#content .content_area .project h3 {
+  font-size: 4.1rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+#content .content_area .project .accent {
+  color: #f65742;
+}
+#content .content_area .project p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #666;
+}
+
+
 #content .content_area .intro {
   background: url('../images/content1/intro_bg.jpg') no-repeat center;
   background-attachment: fixed;
