@@ -1,5 +1,5 @@
 var swiper1 = new Swiper(".swiper1", {
-  slidesPerView: 3.2,
+  slidesPerView: 3.3,
   initialSlide: 0,
 });
 
