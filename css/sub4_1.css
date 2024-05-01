@@ -1,6 +1,6 @@
 /* section.quality */
 #content .content_area .quality {
-  width: 1920px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }

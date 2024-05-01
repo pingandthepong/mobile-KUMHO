@@ -3,7 +3,7 @@
   
 }
 #content .content_area .policy .tabs {
-  width: 1920px;
+  width: 100%;
   margin: 0 auto 100px;
   position: relative;
   overflow: hidden;
