@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- DONE: 아이폰 자동 링크 막기 -->
     <meta name="format-detection" content="telephone=no">
-    <title>회사소개-오시는 길</title>
+    <title>기술혁신-토목건축연구소</title>
     <!-- DONE: favicon 삽입 -->
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
@@ -17,15 +17,12 @@
     <!-- DONE: AOS 삽입 -->
     <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/sub1common.css">
-    <link rel="stylesheet" href="./css/sub1_3.css">
+    <link rel="stylesheet" href="./css/sub3common.css">
+    <link rel="stylesheet" href="./css/sub3_1.css">
 
     <script src="./js/prefixfree.min.js"></script>
     <!-- DONE: Font Awesome 삽입 -->
     <script src="https://kit.fontawesome.com/5c48cfd0d4.js" crossorigin="anonymous"></script>
-    <!-- DONE: kakao map -->
-    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fd6742a7f9629830a40015da1982901b"></script>
-    <script src="./js/map.js"></script>
     <script>
       // <![CDATA[
       try {
@@ -120,14 +117,13 @@
 
       <!-- .visual -->
       <div class="visual">
-        <span>회사소개</span>
+        <span>사업분야</span>
       </div>
       <!-- .sub_nav -->
-      <div class="sub_nav">
-        <ul>
-          <li><a href="./sub1_1.html">VISION</a></li>
-          <li><a href="./sub1_2.html">투자정보</a></li>
-          <li><a href="./sub1_3.html" class="current">오시는 길</a></li>
+      <div class="sub_nav swiper-container swiper1">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide"><a href="./sub3_1.html">토목건축연구소</a></li>
+          <li class="swiper-slide"><a href="./sub3_2.html">수상실적</a></li>
         </ul>
       </div>
 
@@ -136,45 +132,100 @@
         <h2 class="hidden">본문콘텐츠영역</h2>
         <!-- .content_area -->
         <div class="content_area">
-          <section class="address">
-            <h3>Contact Us<span class="hidden"> - 연락처 및 교통편</span> </h3>
-            <p>서울특별시 종로구 우정국로26<br> 센트로폴리스 A동, 금호건설</p>
-          </section>
-          <section class="contact">
-            <h3 class="hidden">지도</h3>
-            <div class="map_api">
-                <div id="map"></div>
+          <!-- section.intro -->
+          <section class="intro">
+            <img src="./images/sub2_4_intro_bg.jpg" alt="">
+            <div class="intro__title_container">
+              <div class="intro__title">
+                <span class="business" aria-hidden="true">플랜트/환경사업</span>
+                <h3>환경경영 실천으로<br> 산업발전을 선도하는<br> 글로벌 기술력</h3>
+                <p class="slogan">막여과식 해수담수화 시설,<br> 열병합발전소와 화력발전소 개발 등<br> 다양한 시공경험을 토대로<br> 풍력, 바이오가스, 원자력 발전 등의<br> 새로운 시장을 개척하여 전 분야에서<br> 차별화된 경쟁력을 갖추어 나가고 있습니다.</p>
+                <p class="sector">
+                  발전, 에너지저장/공급, 석유화학, 산업, 환경
+                </p>
+              </div>
             </div>
           </section>
-          <section class="contact_us">
-            <!-- <h3>Contact Us<span class="hidden"> - 연락처 및 교통편</span> </h3>
-            <p>서울특별시 종로구 우정국로26<br> 센트로폴리스 A동, 금호건설</p> -->
 
-            <dl class="phone">
-              <dt class="contactus_title">전화번호</dt>
-              <dd><span class="title">대표전화</span><a href="tel:+82263030102">(02)6303-0102</a></dd>
-              <dd><span class="title">건축A/S</span><a href="tel:82263030342">(02)6303-0342</a> <span class="title">해피콜센터</span> <a href="tel:+82800000082">080-000-0082</a></dd>
-              <dd><span class="title">토목A/S</span><a href="tel:+82263030904">(02)6303-0904</a></dd>
-              <dd><span class="title">분양</span><a href="tel:+82263030645">(02)6303-0645</a><span class="title">기타문의</span><a href="tel:+82263030102">(02)6303-0102</a></dd>
-              <dd class="caution">주말에는 대표전화가 운영되지 않습니다.<br> A/S접수나 분양 문의는<br> 아래 링크를 통해 문의하시기 바랍니다.<a class="as_link" href="https://www.khapt.co.kr/oullim/main" target="_blank" >A/S접수 및 분양 문의</a></dd>
-            </dl>
-            <div class="public">
-              <div class="contactus_title">대중교통</div>
-                <dl>
-                  <dt class="title">지하철</dt>
-                  <dd class="subway_1">1호선 종각역 3-1번출구 방면</dd>
+          <section class="intro2">
+            <div class="intro2__title">
+              <h3>Development as a <span class="accent"><span class="before_circle">W</span>ork of Art</span></h3>
+              <a class="more_btn" href="javascript:void(0)">포트폴리오 보기</a>
+            </div>
 
-                  <dt class="title">일반버스</dt>
-                  <dt class="sub_dt blue_bus">간선버스</dt>
-                  <dd>151, 162, 172, 401, 406, 704, 101, 103, 143, 150, 160, 201, 260, 262, 270, 271, 273, 370, 470, 501, 720, 721, 741, N15, N26, N37, N62</dd>
-                
-                  <dt class="sub_dt green_bus">지선버스</dt>
-                  <dd>7022</dd>
-                </dl>
+            <div class="swiper-container swiper2">
+              <ul class="intro2__container swiper-wrapper">
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>열병합발전소</dt>
+                    <dd>4,164.4MW</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_4_intro2_1.jpg" alt=""></div>
+                </li>
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>에너지저장/공급</dt>
+                    <dd>2,243,408 bbl</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_4_intro2_2.jpg" alt=""></div>
+                </li>
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>수처리</dt>
+                    <dd>2,000,000t</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_4_intro2_3.jpg" alt=""></div>
+                </li>
+                <li class="swiper-slide">
+                  <dl>
+                    <dt>바이오가스</dt>
+                    <dd>320㎥,40톤(일)</dd>
+                  </dl>
+                  <div class="img"><img src="./images/sub2_4_intro2_4.jpg" alt=""></div>
+                </li>
               
+              </ul>
             </div>
           </section>
+          <section class="intro3">
+            <div class="intro3_wrap">
+              <div class="intro3_txt">
+                <h3>Global Market의<br> 초일류 EPC 복합사업자</h3>
+                <p>금호건설은 2002년 카타르 LPG 프로젝트와 2008년 평택 LNG 인수기지 프로젝트의 성공적 수행을 통해 에너지 저장시설 분야의 글로벌 기업으로 도약하였습니다.</p>
+                <p>또한 2010년 싱가포르 최초의 LNG 인수기지와 2014년 말레이시아 RGT-2 인수기지를 수행하였고, 베트남 Thi Vai LNG, 카타르 LNG 저장 및 접안시설 등 추가 프로젝트를 수주하여 지속 수행하고 있습니다.</p>
+                <p>이렇듯 금호건설은 국내외에서 쌓은 풍부한 경험과 기술력, 그리고 지속적인 혁신을 바탕으로 Global Top Tier를 향해 전진하고 있습니다.</p>
+                <a class="more_btn" href="javascript:void(0)">플랜트/환경사업 포트폴리오 보기</a>
+              </div>
+              <div class="swiper-container swiper3">
+                <ul class="intro3_content swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="img_container"><img src="./images/sub2_4_intro3_1.jpg" alt=""></div>
+                    <dl>
+                      <dt>UAE 원전</dt>
+                      <dd>한국형 원전 최초 수출</dd>
+                    </dl>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="img_container"><img src="./images/sub2_4_intro3_2.jpg" alt=""></div>
+                    <dl>
+                      <dt>BSLNG 터미널</dt>
+                      <dd>싱가포르 최초의 LNG 터미널</dd>
+                    </dl>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="img_container"><img src="./images/sub2_4_intro3_3.jpg" alt=""></div>
+                    <dl>
+                      <dt>말레이시아 RGT-2 인수기지</dt>
+                      <dd>말레이시아 최초의 육상 LNG Terminal</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          
         </div>
+        
       </article>
       
       <!-- #footerArea -->
@@ -294,16 +345,7 @@
         easing: 'ease-in-out-sine',
       });      
     </script>
-    <script>
-      var swiper1 = new Swiper(".mySwiper1", {
-        loop: true,
-        spaceBetween: 20,
-      });
-    </script>
-    <script src="./js/tab.js"></script>
-    <script src="./js/earningRate.js"></script>
-    <script src="./js/invest3Graph.js"></script>
-    <script src="./js/fPosition.js"></script>
-    <script src="./js/fIncome.js"></script>
+    <script src="./js/sub2Swiper.js"></script>
+    
   </body>
 </html>
