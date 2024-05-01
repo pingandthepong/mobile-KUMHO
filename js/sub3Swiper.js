@@ -8,8 +8,11 @@ var swiper2 = new Swiper('.swiper2', {
   cubeEffect: {
     shadow: true,
     slideShadows: true,
-    // shadowOffset: ,
-    // shadowScale: 0.94,
+  },
+  speed: 3000,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
   },
 }); 
 
