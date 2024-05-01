@@ -1,67 +1,72 @@
 /* section.quality */
 #content .content_area .quality {
   width: 100%;
-  margin: 0 auto;
   position: relative;
+
+  .tabs {
+    overflow: hidden;
+  
+    .tab {
+      width: 33.33%;
+      font-size: 1.1rem;
+      font-weight: 100;
+      line-height: 3;
+      text-align: center;
+      color: #999;
+      position: absolute;
+      left: 0;
+      top: 0;
+    
+      &.tab1 {
+        left: 0;
+      }
+      &.tab2 {
+        left: 33.33%;
+      }
+      &.tab3 {
+        left: 66.66%;
+      }
+      &::before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #f65742;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        transition: all .25s ease-out;
+      }
+      &.on {
+        color: #f65742;
+      }
+      &.on::before {
+        width: 100%;
+      }
+      &::after {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #f65742;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        opacity: 0;
+        transition: all .25s ease-out;
+      }
+      &.on::after {
+        opacity: 1;
+      }
+    }
+  }
 }
-#content .content_area .quality .tabs {
-  overflow: hidden;
-}
-#content .content_area .quality .tabs .tab {
-  width: 250px;
-  font-size: 2rem;
-  font-weight: 100;
-  line-height: 3;
-  text-align: center;
-  color: #999;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition: all .25s ease-out;
-}
-#content .content_area .quality .tabs .tab1 {
-  left: 585px;
-}
-#content .content_area .quality .tabs .tab2 {
-  left: 835px;
-}
-#content .content_area .quality .tabs .tab3 {
-  left: 1085px;
-}
-#content .content_area .quality .tabs .tab::before {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #f65742;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  transition: all .25s ease-out;
-}
-#content .content_area .quality .tabs .tab.on::before {
-  width: 100%;
-}
-#content .content_area .quality .tabs .tab::after {
-  content: '';
-  display: block;
-  width: 8px;
-  height: 9px;
-  border-radius: 50%;
-  background: #f65742;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  opacity: 0;
-  transition: all .25s ease-out;
-}
-#content .content_area .quality .tabs .tab.on::after {
-  opacity: 1;
-}
-#content .content_area .quality .tabs .tab:is(.on, :hover) {
-  color: #f65742;
-}
+
+
+
+
 #content .content_area .quality .tabs .contlist {
   margin: 72px auto 0;
   padding: 100px 0 200px;
