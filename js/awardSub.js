@@ -10,7 +10,7 @@ $(function () {
   });
 
   $.ajax({
-    url: "../data/awardSub.json",
+    url: "./data/mobile_awardSub.json",
 
     dataType: "json",
 

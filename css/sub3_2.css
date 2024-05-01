@@ -97,8 +97,13 @@
 }
 #content .award__container .img_wrap {
   width: 100%;
-  /* height: 215px; */
+  aspect-ratio: 507 / 215;
   overflow: hidden;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 #content .award__container .award_txt {
   width: 90%;
