@@ -3,9 +3,15 @@ var swiper1 = new Swiper(".swiper1", {
   initialSlide: 0,
 });
 
-// var swiper2 = new Swiper('.swiper2', {
-//   slidesPerView: 2.3,
-// }); 
+var swiper2 = new Swiper('.swiper2', {
+  effect: "cube",
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    // shadowOffset: ,
+    // shadowScale: 0.94,
+  },
+}); 
 
 // var swiper3 = new Swiper('.swiper3', {
 //   effect: "coverflow",
