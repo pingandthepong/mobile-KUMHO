@@ -227,8 +227,8 @@
         font-weight: 500;
         padding: 10px 10%;
         background: #ffebe8;
-        border-radius: 0 0 8px 8px;
         color: #f65742;
+        border-radius: 0 0 8px 8px;
         transition: all .25s ease-out;
 
         .sm {
@@ -238,9 +238,9 @@
         }
       }
 
-      &:is(:hover, :active, :focus) .trigger {
-        background: #f65742;
-        color: #fff;
+      &:is(:active, :focus) .trigger {
+        background: #ffebe8;
+        color: #f65742;
       }
 
       & > span i {
@@ -251,10 +251,6 @@
         font-size: 1.3rem;
         color: #f65742;
         transition: all .25s ease-out;
-      }
-
-      &:is(:hover, :active, :focus) > span i {
-        color: #fff;
       }
     }
 
