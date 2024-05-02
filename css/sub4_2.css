@@ -218,7 +218,7 @@
         width: 100%;
         position: absolute;
         left: 0;
-        bottom: 30%;
+        bottom: 15%;
         overflow: hidden;
       
         .move_list_wrap {
