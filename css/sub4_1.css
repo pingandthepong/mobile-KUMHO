@@ -191,13 +191,15 @@
 #content .content_area .quality .tabs .contlist:nth-of-type(3) {
   
   .activity {
+    width: 90%;
+    margin: 0 auto;
     position: relative;
 
     .all {
       font-size: 1rem;
       position: absolute;
-      right: 5%;
-      top: -5%;
+      right: 0;
+      top: -30px;
 
       i {
         margin-left: 8px;
@@ -207,8 +209,7 @@
     }
 
     ul {
-      width: 90%;
-      margin: 30px auto;
+      
       
       li {
         border-top: 1px solid #f65742;
@@ -225,7 +226,7 @@
       .trigger {
         font-size: 1.3rem;
         font-weight: 500;
-        padding: 10px 10%;
+        padding: 10px 24px;
         background: #ffebe8;
         color: #f65742;
         border-radius: 0 0 8px 8px;
