@@ -67,7 +67,7 @@
           }
 
           .content {
-            font-size: 2.14rem;
+            font-size: 1.8rem;
             font-weight: 200;
             color: #101010;
 
@@ -80,6 +80,24 @@
               left: 50%;
               bottom: 15%;
               transform: translateX(-50%);
+            }
+          }
+          @media screen and (min-width: 540px) {
+            .content {
+              font-size: 2.14rem;
+
+              & + span {
+                font-size: 1.3rem;
+              }
+            }
+          }
+          @media screen and (min-width: 768px) {
+            .content {
+              font-size: 3rem;
+
+              & + span {
+                font-size: 2rem;
+              }
             }
           }
           
