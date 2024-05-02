@@ -74,9 +74,12 @@
       margin-bottom: 10%;
 
       & + p {
-        font-size: 20px;
+        width: 90%;
+        margin: 0 auto 15%;
+        font-size: 1.1rem;
+        line-height: 1.75;
         font-weight: 200;
-        margin-bottom: 50px;
+        text-align: center;
       }
     }
   }
