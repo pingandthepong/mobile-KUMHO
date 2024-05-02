@@ -147,22 +147,20 @@
   }
 
   .system_list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
 
     dl {
-      width: calc((100% - 40px) / 3);
+      width: 100%;
+      margin-bottom: 20px;
       text-align: center;
       border: 1px solid #ddd;
       box-sizing: border-box;
       border-radius: 20px;
       overflow: hidden;
-      transition: all .25s ease-out;
 
       dt {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 600;
         color: #f65742;
         border-bottom: 1px solid #ddd;
@@ -170,16 +168,16 @@
         background: #ffebe8;
       }
       dd {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: 500;
         color: #555;
         line-height: 1.75;
 
         &:nth-of-type(1) {
-          margin-top: 20px;
+          margin-top: 5%;
         }
         &:last-of-type {
-          margin-bottom: 20px;
+          margin-bottom: 5%;
         }
       }
     }
