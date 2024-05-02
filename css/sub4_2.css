@@ -10,6 +10,7 @@
 
     .swiper1 {
       width: 100%;
+      position: relative;
 
       &::before {
         content: '';
