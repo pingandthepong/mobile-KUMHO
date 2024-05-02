@@ -216,7 +216,6 @@
       }
       .move_list {
         width: 100%;
-        overflow: hidden;
         position: absolute;
         left: 0;
         bottom: 30%;
@@ -229,6 +228,7 @@
           ul {
             float: left;
             width: 50%;
+            
             li {
               width: 20%;
               text-align: center;
@@ -237,7 +237,7 @@
               background: #f8f8f8;
               color: #f65742;
               border: 1px solid #ddd;
-              padding:15px 0;
+              padding: 15px 0;
               box-sizing: border-box;
               float: left;
             }
