@@ -252,12 +252,12 @@
 }
 
 
-
 /* .certification */
 #content .content_area .certification {
+  padding-top: 20%;
   position: relative;
-  height: 530px;
-  margin-bottom: 80px;
+  /* height: 530px;
+  margin-bottom: 80px; */
 }
 #content .content_area .certification p {
   font-size: 30px;
