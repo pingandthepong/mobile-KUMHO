@@ -1,6 +1,13 @@
 #content section:not(.intro) {
   width: 100%;
   padding: 0 0 20%;
+
+  .title {
+    font-size: 1.71rem;
+    font-weight: 400;
+    margin-bottom: 7.5%;
+    text-align: center;
+  }
 }
 
 /* .environment_goals */
@@ -105,12 +112,7 @@
 /* .environment_policy */
 #content .content_area .environment_policy {
 
-  .title {
-    font-size: 1.71rem;
-    font-weight: 200;
-    margin-bottom: 7.5%;
-    text-align: center;
-  }
+  
 
   & > ul {
     width: 100%;
@@ -151,7 +153,7 @@
         
           li {
             font-size: 1.1rem;
-            font-weight: 200;
+            font-weight: 300;
             color: #101010;
 
             &::before {
@@ -256,13 +258,6 @@
 #content .content_area .certification {
   padding: 20% 0;
   position: relative;
-
-  .title {
-    font-size: 1.71rem;
-    font-weight: 200;
-    margin-bottom: 7.5%;
-    text-align: center;
-  }
 
   .img_container {
     width: 90%;
