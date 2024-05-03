@@ -18,7 +18,6 @@ xhr.send(null);
 
 
 
-// 모달 (jQuery)
 $(document).ready(function(){
  
   var newContent='';
@@ -28,16 +27,13 @@ $(document).ready(function(){
 
       // 클릭 시 인덱스 번호 추출
       var ind = $(this).index('.job_info_list a');
-
       // console.log('클릭 이벤트 발생'); // 확인
 
-      $('.modal_box2').show();
-      $('.popup_job').show();
+      $('.popup_job').hide();
 
-      $('body').addClass('modal-open');
+      $(this).siblings('.popup_job').toggle('fast');
 
       newContent=''; // 이전 데이터가 비워지도록 초기화
-      newContent+=`<h5>${responseObject.popupJob[ind].title}<span>${responseObject.popupJob[ind].category}</span></h5>`;
       newContent+=`<dl class="introduce">`;
       newContent+=`<dt>직무특성 및 소개</dt>`;
       newContent+=`<dd class="strong">${responseObject.popupJob[ind].introStrong}</dd>`;
@@ -56,18 +52,10 @@ $(document).ready(function(){
       newContent+=`</dl>`;
 
 
-      $('.popup_job_wrap').html(newContent);
+      $('.popup_job').html(newContent);
   
   });
  
 
-  $('.popupjob_close, .modal_box2').click(function(e){
-    e.preventDefault();
-      
-    $('.modal_box2').hide();
-    $('.popup_job').hide();
-
-    $('body').removeClass('modal-open');
-  });
   
 });

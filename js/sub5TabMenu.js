@@ -15,6 +15,7 @@
 // });
 
 
+// DONE: .tabs_tit 클릭 시 .tabs 열고 닫기
 $('.tabs_tit').on('click', function(e) {
   e.preventDefault();
 
@@ -22,17 +23,36 @@ $('.tabs_tit').on('click', function(e) {
   $('.tabs').slideToggle('fast');
 });
 
-// 초기 상태
+// DOING: 초기 상태 (첫 번째 .tab 활성화)
 $('.tab_menu:eq(0) .tab').addClass('current');
-$('.cont1').show();
+// TODO: cont1 보이기
+$('.cont2').show();
 
-// $('.tab_menu:eq(0) .tab') 클릭 시 직장인 브이로그
-// $('.tab_menu:eq(1) .tab') 클릭 시 직무소개
-$('.tab').click(function(e) {
+
+// DONE: 각 .tab 클릭 시 본인 활성화 
+$('.tab_menu .tab').click(function(e) {
   e.preventDefault();
 
-  $('.tabs_tit').toggleClass('on');
-  $('.tab_menu').slideToggle();
+  $('.tab').removeClass('current');
+  $(this).addClass('current');
   
+  // DONE: tabs_tit 에 자기 자신 text 넣기
+  $('.tabs_tit').text($(this).text());
+  
+  // DONE: 클릭 시 .tabs 닫기
+  $('.tabs').slideUp('fast');
+  // DONE: 클릭 시 .tabs_tit에 toggleClass('on')
+  $('.tabs_tit').toggleClass('on');
+  
+
 });
 
+// TODO: 각 페이지에 자기 자신 뜨게 하기
+// $('.job_info_list a').toggle(
+//   function() {
+//     $(this).siblings($('.popup_job')).slideDown();
+//   };
+//   function() {
+//     $(this).siblings($('.popup_job')).slideUp();
+//   };
+// )
