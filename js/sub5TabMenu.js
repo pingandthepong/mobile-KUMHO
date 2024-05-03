@@ -15,13 +15,24 @@
 // });
 
 
-$('.target').on('click', function(e) {
+$('.tabs_tit').on('click', function(e) {
   e.preventDefault();
-
-  // $(this).addClass('on');
-  // $('.tabs').slideDown();
 
   $(this).toggleClass('on');
   $('.tabs').slideToggle('fast');
-})
+});
+
+// 초기 상태
+$('.tab_menu:eq(0) .tab').addClass('current');
+$('.cont1').show();
+
+// $('.tab_menu:eq(0) .tab') 클릭 시 직장인 브이로그
+// $('.tab_menu:eq(1) .tab') 클릭 시 직무소개
+$('.tab').click(function(e) {
+  e.preventDefault();
+
+  $('.tabs_tit').toggleClass('on');
+  $('.tab_menu').slideToggle();
+  
+});
 
