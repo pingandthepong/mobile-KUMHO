@@ -1,27 +1,60 @@
-#content .content_area section .tabs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 60px;
+#content .content_area section {
+  
+  .tabs_link {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    a {
+      line-height: 45px;
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: #666;
+      padding: 0 10%;
+      
+    }
+  
+    .target {
+      background: #f65742;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      
+      &::after {
+        content: '\f078';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 600;
+        transform: rotate(-180deg);
+        transition: all .25s ease-out;
+      }
+      &.on::after {
+        transform: rotate(0);
+      }
+    }
+  
+    .tabs {
+      border: 1px solid #e4e4e4;
+      display: none;
+    
+      .tab_menu {
+        
+        .tab {
+        
+          &.current {
+            color: #f65742;
+            
+          }
+        }
+      }
+    }
+  }
+
+  
 }
-#content .content_area section .tabs .tab_menu {
-}
-#content .content_area section .tabs .tab_menu .tab {
-  width: 600px;
-  height: 60px;
-  font-size: 18px;
-  font-weight: 300;
-  color: #666;
-  text-align: center;
-  line-height: 60px;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-}
-#content .content_area section .tabs .tab_menu .tab.current {
-  background: #f65742;
-  color: #fff;
-  border: 1px solid #f65742;
-}
+
+
+
+
 
 #content .content_area section .contlist {
   display: none;
