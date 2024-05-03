@@ -454,37 +454,61 @@
 
 }
 
-
-
-
-
 /* li:nth-child(2),(3) */
-#content .content_area .environment_management .manage_accordion li .a table {
-  width: 100%;
-}
-#content .content_area .environment_management .manage_accordion li .a table caption {
-  font-weight: 300;
-  text-align: left;
-  color: #666;
-  margin-bottom: 30px;
-}
-#content .content_area .environment_management .manage_accordion li .a table thead tr th {
-  border-bottom: 1px solid #000;
-  padding: 30px 20px;
-  font-weight: 400;
-  color: #f65742;
-  text-align: center;
-  font-size: 18px;
-}
-#content .content_area .environment_management .manage_accordion li .a table tbody tr {
+#content .content_area .environment_management {
+  .manage_accordion li .a {
+    overflow-x: scroll;
 
+    table {
+      width: 550px;
+      text-align: center;
+  
+      thead tr th {
+        border-bottom: 1px solid #000;
+        line-height: 55px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #f65742;
+        background: #fff;
+
+      }
+      tbody tr {
+        td {
+          height: 60px;
+          border-bottom: 1px solid #e4e4e4;
+          color: #666;
+          background: #fff;
+          
+          &:not(:first-of-type, :last-of-type) {
+            border-right: 1px solid #e4e4e4;
+          }
+
+          &:first-of-type::after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 100%;
+            background: #e4e4e4;
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+        }
+      } 
+
+      tr > *:first-of-type {
+        position: sticky;
+        left: 0;
+        top: 0;
+        border-right: none;
+        width: 100px;
+      }
+      tr > *:nth-of-type(2) {
+        width: 100px;
+      }
+    }
+  }
+  
 }
-#content .content_area .environment_management .manage_accordion li .a table tbody tr td {
-  padding: 30px 20px;
-  border-bottom: 1px solid #e4e4e4;
-  color: #666;
-  text-align: center;
-}
-#content .content_area .environment_management .manage_accordion li .a table tbody tr td:not(:last-of-type) {
-  border-right: 1px solid #e4e4e4;
-}
+
+/* th:first-of-type, tbody */
