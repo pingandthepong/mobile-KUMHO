@@ -56,38 +56,30 @@ $(document).ready(function(){
 
     $('.popup_job').html(newContent);
 
-      const myList = $(this).parents('li');
 
-      // 닫혀있다면
-      if(myList.hasClass('hide')) {
-      // 모두 다 닫고
-      list.find('.popup_job').slideUp('fast');
-      list.removeClass('show').addClass('remove');
+    // 클릭 이벤트 핸들러
+    const myList = $(this).parent('li');
 
-      // 클래스 변경
-      myList.removeClass('hide').addClass('show');
-      myList.find('.popup_job').slideDown('slow');
+    // 닫혀있다면
+    if(myList.hasClass('hide')) {
+    // 모두 다 닫고
+    list.find('.popup_job').slideUp('fast');
+    list.removeClass('show').addClass('remove');
 
-
-      // 열려있다면
-      } else {
-
-      // 다른 list show 지우기
-      list.removeClass('show').addClass('hide');
-      // 클래스 바꾸기
-      myList.removeClass('show').addClass('hide');
-      myList.find('.popup_job').slideUp('fast');
-      }
-
-    // $('.job_into_list').find($('.popup_job').hide());
-
-    // $(this).siblings('.popup_job').toggle();
+    // 클래스 변경
+    myList.removeClass('hide').addClass('show');
+    myList.find('.popup_job').slideDown('fast');
 
 
-      
-  
+    // 열려있다면
+    } else {
+
+    // 다른 list show 지우기
+    list.removeClass('show').addClass('hide');
+    // 클래스 바꾸기
+    myList.removeClass('show').addClass('hide');
+    myList.find('.popup_job').slideUp('fast');
+    }
   });
- 
 
-  
 });
