@@ -58,7 +58,7 @@ $(document).ready(function(){
 
 
     // 클릭 이벤트 핸들러
-    const myList = $(this).parent('li');
+    let myList = $(this).parent('li');
 
     // 닫혀있다면
     if(myList.hasClass('hide')) {
@@ -69,6 +69,9 @@ $(document).ready(function(){
     // 클래스 변경
     myList.removeClass('hide').addClass('show');
     myList.find('.popup_job').slideDown('fast');
+
+    let myListOffset = myList.offset().top;
+    window.scrollTo({top: myListOffset, behavior: 'smooth'});    
 
 
     // 열려있다면
