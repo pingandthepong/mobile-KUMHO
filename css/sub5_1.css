@@ -225,6 +225,11 @@
             right: 20px;
             top: 50%;
             transform: translateY(-50%) rotate(-135deg);
+            transition: all .25s ease-out;
+          }
+          &.on::after {
+            transform: translateY(-50%) rotate(-45deg);
+
           }
         }
       }
@@ -232,7 +237,6 @@
   }
   
   .popup_job {
-    width: 100%;
     padding: 10% 0 0;
     border-bottom: 1px solid #eee;
     display: none;

@@ -48,11 +48,3 @@ $('.tab_menu .tab').click(function(e) {
 });
 
 // TODO: 각 페이지에 자기 자신 뜨게 하기
-// $('.job_info_list a').toggle(
-//   function() {
-//     $(this).siblings($('.popup_job')).slideDown();
-//   };
-//   function() {
-//     $(this).siblings($('.popup_job')).slideUp();
-//   };
-// )
