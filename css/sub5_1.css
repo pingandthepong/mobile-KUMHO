@@ -1,8 +1,3 @@
-#content .content_area section {
-  width: 1200px;
-  margin: auto;
-  padding-bottom: 150px;
-}
 #content .content_area section .tabs {
   display: flex;
   justify-content: center;
