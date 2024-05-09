@@ -571,9 +571,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 #content .sec5.recruit .sec5-2 .swiper-container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 #content .sec5.recruit .sec5-2 .swiper-slide {
