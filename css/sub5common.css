@@ -32,7 +32,7 @@
   align-items: center;
 }
 .sub_nav li {
-  width: calc(100% / 1);
+  width: calc(100% / 2);
   text-align: center;
   position: relative;
 }
@@ -67,10 +67,10 @@
   section {
     padding: 50px 0;
     position: relative;
-
+/* 
     &:not(:last-of-type) {
       margin-bottom: 120px;
-    }
+    } */
 
     h4 {
       font-size: 2.5rem;
@@ -92,28 +92,53 @@
 
 
 #content .content_area section .txt_box_wrap {
-  width: 1200px;
-  margin: 0 auto 50px;
-  display: flex;
-  justify-content: space-between;
+  width: 90%;
+  margin: 50px auto 0;
 
   h3 {
-    font-size: 27px;
+    font-size: 1.93rem;
     font-weight: 700;
     color: #1c1c1c;
     letter-spacing: -1.5px;
     line-height: 1.75;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 50%;
+      height: 3px;
+      background: #333;
+      margin: 0 auto 30px;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 50%;
+      height: 3px;
+      background: #333;
+      margin: 30px auto 50px;
+    }
   }
 
   .txt_box {
-    width: 880px;
+    width: 100%;
     letter-spacing: -0.54px;
+    text-align: center;
 
     p.strong {
-      font-size: 22px;
+      font-size: 1.43rem;
       font-weight: 600;
       letter-spacing: -0.05rem;
       margin-bottom: 30px;
+
+      &::after {
+        content:'';
+        display: block;
+        width: 1px;
+        height: 100px;
+        background: #333;
+        margin: 50px auto;
+      }
 
       .accent {
         font-weight: 900;
@@ -121,12 +146,16 @@
     }
 
     p.desc {
-      font-size: 18px;
+      font-size: 1.1rem;
       font-weight: 200;
+
+      span {
+        display: block;
+        margin-bottom: 30px;
+      }
     }
   }
 }
-
 
 /* 5_3 */
 #content .content_area .list_circle {
