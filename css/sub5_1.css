@@ -145,18 +145,18 @@
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+  transform: translateY(-50%);
   z-index: 20;
   display: none;
 
   .youtube_init {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    height: 100%;
 
     iframe {
       width: 100%;
-      aspect-ratio: 16/ 9;
+      height: 100%;
       border: 0;
     }
     
