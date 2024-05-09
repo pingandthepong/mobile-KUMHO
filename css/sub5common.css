@@ -32,7 +32,7 @@
   align-items: center;
 }
 .sub_nav li {
-  width: calc(100% / 3);
+  width: calc(100% / 1);
   text-align: center;
   position: relative;
 }
