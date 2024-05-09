@@ -10,7 +10,7 @@ $.ajax({
 
       for (var i in useData) {
         txt += `<li class="swiper-slide">`,
-        txt += `<a href="#" class="youtube_link">`,
+        txt += `<a href="./sub5_1.html" class="youtube_link">`,
         txt += `<div class="img_box">`,
         txt += `<div class="img">`;
         txt += `<img src="${useData[i].imgSrc}" alt="${useData[i].imgAlt}">`,
