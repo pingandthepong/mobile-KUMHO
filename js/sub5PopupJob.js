@@ -22,13 +22,10 @@ $(document).ready(function(){
  
   var newContent='';
   const list = $('.job_info_list li');
-  
-  // 모든 li에 hide 추가
   list.addClass('hide');
 
   list.find('a').click(function(e){
     e.preventDefault();
-    $(this).toggleClass('on');
 
     // 클릭 시 인덱스 번호 추출
     var ind = $(this).index('.job_info_list a');
@@ -59,30 +56,47 @@ $(document).ready(function(){
 
     // 클릭 이벤트 핸들러
     let myList = $(this).parent('li');
+    let myListOffset = myList.offset().top;
+
+
 
     // 닫혀있다면
     if(myList.hasClass('hide')) {
+      
     // 모두 다 닫고
     list.find('.popup_job').slideUp('fast');
     list.removeClass('show').addClass('remove');
+    list.parent('li').find('a').removeClass('on');
 
     // 클래스 변경
     myList.removeClass('hide').addClass('show');
     myList.find('.popup_job').slideDown('fast');
+    myList.find('a').addClass('on');
 
-    let myListOffset = myList.offset().top;
+    // 선택한 요소가 상단으로 오도록 하기
     window.scrollTo({top: myListOffset, behavior: 'smooth'});    
 
 
     // 열려있다면
     } else {
 
-    // 다른 list show 지우기
-    list.removeClass('show').addClass('hide');
-    // 클래스 바꾸기
-    myList.removeClass('show').addClass('hide');
-    myList.find('.popup_job').slideUp('fast');
+      // 다른 list show 지우기
+      list.removeClass('show').addClass('hide');
+      list.parent('li').find('a').removeClass('on');
+      // 클래스 바꾸기
+      myList.removeClass('show').addClass('hide');
+      myList.find('.popup_job').slideUp('fast');
+      myList.find('a').removeClass('on');
+
+      // 선택한 요소가 상단으로 오도록 하기
+      window.scrollTo({top: myListOffset, behavior: 'smooth'});
     }
   });
 
 });
+
+
+
+// TODO: myList 화살표 
+// TODO: popup_job 열려있을 때 전체 스크롤 좌표값 다시 받기
+// TODO: 중복되는 코드들 함수로 다시 만들기

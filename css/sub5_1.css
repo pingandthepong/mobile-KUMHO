@@ -3,7 +3,7 @@
   .tabs_link {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 
     a {
       line-height: 45px;
@@ -71,17 +71,14 @@
 /* .cont1 */
 #content .content_area section .cont1 {
   ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
   
     li a {
-      width: 585px;
-      height: 410px;
-      margin-bottom: 80px;
+      margin-bottom: 50px;
   
       .img_box {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         position: relative;
   
         &::before {
@@ -124,8 +121,6 @@
         
           img {
             width: 100%;
-            transform: scale(1.05);
-            transition: all 0.25s ease-out;
           }
         }
       }
@@ -133,22 +128,18 @@
   }
 }
 
-
-
 #content .content_area section .cont1 li a .txt_box .tit {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #1c1c1c;
-  line-height: 30px;
   letter-spacing: -0.05rem;
-  margin-top: 5px;
-  font-size: 1.1rem;
   color: #666;
+  margin-bottom: 10px;
 }
 
 #content .content_area section .cont1 .popup_youtube {
-  width: 1200px;
-  height: 675px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   background: #fff;
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -159,12 +150,13 @@
   display: none;
 
   .youtube_init {
-    width: 1200px;
-    height: 675px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
 
     iframe {
       width: 100%;
-      height: 100%;
+      aspect-ratio: 16/ 9;
+      border: 0;
     }
     
   }
