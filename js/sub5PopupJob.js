@@ -56,47 +56,29 @@ $(document).ready(function(){
 
     // 클릭 이벤트 핸들러
     let myList = $(this).parent('li');
-    let myListOffset = myList.offset().top;
 
 
-
-    // 닫혀있다면
+    // 닫혀있을 때 열기
     if(myList.hasClass('hide')) {
-      
-    // 모두 다 닫고
-    list.find('.popup_job').slideUp('fast');
-    list.removeClass('show').addClass('remove');
-    list.parent('li').find('a').removeClass('on');
 
     // 클래스 변경
     myList.removeClass('hide').addClass('show');
+    // 슬라이드 띄우기
     myList.find('.popup_job').slideDown('fast');
+    // 화살표 열기
     myList.find('a').addClass('on');
 
-    // 선택한 요소가 상단으로 오도록 하기
-    window.scrollTo({top: myListOffset, behavior: 'smooth'});    
 
+  } else {
+    // 열려있을 때 닫기
 
-    // 열려있다면
-    } else {
-
-      // 다른 list show 지우기
-      list.removeClass('show').addClass('hide');
-      list.parent('li').find('a').removeClass('on');
-      // 클래스 바꾸기
+      // 클래스 변경
       myList.removeClass('show').addClass('hide');
+      // 슬라이드 감추기
       myList.find('.popup_job').slideUp('fast');
+      // 화살표 닫기
       myList.find('a').removeClass('on');
-
-      // 선택한 요소가 상단으로 오도록 하기
-      window.scrollTo({top: myListOffset, behavior: 'smooth'});
     }
   });
 
 });
-
-
-
-// TODO: myList 화살표 
-// TODO: popup_job 열려있을 때 전체 스크롤 좌표값 다시 받기
-// TODO: 중복되는 코드들 함수로 다시 만들기
