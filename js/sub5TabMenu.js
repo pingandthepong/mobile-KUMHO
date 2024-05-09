@@ -25,8 +25,8 @@ $('.tabs_tit').on('click', function(e) {
 
 // DOING: 초기 상태 (첫 번째 .tab 활성화)
 $('.tab_menu:eq(0) .tab').addClass('current');
-// TODO: cont1 보이기
-$('.cont2').show();
+// DONE: cont1 보이기
+$('.cont1').show();
 
 
 // DONE: 각 .tab 클릭 시 본인 활성화 
@@ -45,6 +45,10 @@ $('.tab_menu .tab').click(function(e) {
   $('.tabs_tit').toggleClass('on');
   
 
-});
+  // DONE: 각 페이지에 자기 자신 뜨게 하기
+  var ind = $(this).parent('.tab_menu').index();
+  console.log(ind);
+  $('.contlist').hide();
+  $(`.cont${ind + 1}`).show();
 
-// TODO: 각 페이지에 자기 자신 뜨게 하기
+});
