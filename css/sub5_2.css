@@ -99,7 +99,6 @@
 
 
 
-
 /* .personnel_system3 */
 #content .content_area .personnel_system3 {
   background: #f6f6f6;
@@ -107,8 +106,9 @@
 
 /* Todo: Swiper 사용해보기 */
 #content .content_area .personnel_system3 .swiper {
-  width: 1200px;
-  height: 550px;
+  width: 100%;
+  /* height: 400px; */
+  aspect-ratio: 1 /1;
   overflow: visible;
 }
 #content .content_area .personnel_system3 .swiper-wrapper img {
@@ -117,89 +117,25 @@
 #content .content_area .personnel_system3 .swiper-wrapper .benefit_list {
   color: #fff;
   position: absolute;
-  left: 110px;
-  top: 150px;
+  left: 5%;
+  top: 20%;
   opacity: 0;
   transition: all .5s ease-out;
+  text-align: center;
 }
 #content .content_area .personnel_system3  .swiper-slide-active .benefit_list {
-  top: 95px;
   opacity: 1;
 }
 #content .content_area .personnel_system3 .swiper .benefit_list .tit {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 22px;
+  margin-bottom: 50px;
 }
 #content .content_area .personnel_system3 .swiper .benefit_list ul li {
-  font-size: 19px;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.1rem;
   font-weight: 300;
-  line-height: 2;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-#content .content_area .personnel_system3 .swiper .benefit_list ul li::before {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
-  background: #fff;
-}
-#content .content_area .personnel_system3 .swiper .navigation {
-  width: 330px;
-  height: 80px;
-  background: #333;
-  position: absolute;
-  left: 0;
-  bottom: -40px;
-  z-index: 10;
-}
-#content .content_area .personnel_system3 .swiper .navigation .progress {
- 
-}
-#content .content_area .personnel_system3 .swiper .navigation .progress::before {
-  content: '';
-  display: block;
-  width: 1px;
-  height: 50px;
-  background: #fff;
-  opacity: 0.5;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-#content .content_area .personnel_system3 .swiper .navigation .progress span {
-  display: block;
-  color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-#content .content_area .personnel_system3 .swiper .navigation .progress .num {
-  transform: translate(-300%, -100%);
-}
-#content .content_area .personnel_system3 .swiper .navigation .progress .max {
-  transform: translate(300%, 0%);
-  opacity: 0.5;
-}
-#content .content_area .personnel_system3 .swiper .navigation :is(#next, #prev) {
-  width: 31px;
-  height: 7px;
-  padding: 20px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-#content .content_area .personnel_system3 .swiper .navigation #prev {
-  background: url('../images/slide_arrow_prev.png') no-repeat center; 
-  left: 50%;
-  transform: translate(-150%, -50%);
-}
-#content .content_area .personnel_system3 .swiper .navigation #next {
-  background: url('../images/slide_arrow_next.png') no-repeat center;
-  right: 50%;
-  transform: translate(150%, -50%);
+  list-style: disc;
+  margin-bottom: 15px;
 }
