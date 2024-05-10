@@ -112,9 +112,14 @@
 }
 #content .content_area .personnel_system3 .swiper-wrapper img {
   filter: brightness(0.7);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 #content .content_area .personnel_system3 .swiper-wrapper .benefit_list {
   color: #fff;
+  width: 100%;
   position: absolute;
   left: 5%;
   top: 10%;
