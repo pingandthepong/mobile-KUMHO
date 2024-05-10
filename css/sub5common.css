@@ -65,12 +65,8 @@
   width: 100%;
 
   section {
-    padding: 50px 0;
+    padding: 25px 0;
     position: relative;
-/* 
-    &:not(:last-of-type) {
-      margin-bottom: 120px;
-    } */
 
     h4 {
       font-size: 2.5rem;
@@ -101,23 +97,7 @@
     color: #1c1c1c;
     letter-spacing: -1.5px;
     line-height: 1.75;
-
-    &::before {
-      content: '';
-      display: block;
-      width: 50%;
-      height: 3px;
-      background: #333;
-      margin: 0 auto 30px;
-    }
-    &::after {
-      content: '';
-      display: block;
-      width: 50%;
-      height: 3px;
-      background: #333;
-      margin: 30px auto 50px;
-    }
+    margin-bottom: 50px;
   }
 
   .txt_box {
@@ -126,7 +106,7 @@
     text-align: center;
 
     p.strong {
-      font-size: 1.43rem;
+      font-size: 1.3rem;
       font-weight: 600;
       letter-spacing: -0.05rem;
       margin-bottom: 30px;
@@ -147,7 +127,7 @@
 
     p.desc {
       font-size: 1.1rem;
-      font-weight: 200;
+      font-weight: 300;
 
       span {
         display: block;
