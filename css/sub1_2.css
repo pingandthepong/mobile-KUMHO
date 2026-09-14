@@ -52,19 +52,20 @@
   flex-direction: column;
   justify-content: space-between;
 }
-#content .contlist.tab1 .invest1 .iframe_head {
+#content .contlist.tab1 .invest1 .iframe_head .main-head {
   font-size: 1.4rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   gap: 8px;
 }
-#content .contlist.tab1 .invest1 .iframe_head::before {
+#content .contlist.tab1 .invest1 .iframe_head .main-head::before {
   content: "";
   display: inline-block;
   width: 10%;
   aspect-ratio: 1 / 1;
-  background: #ef0010 url("../images/KUMHO_Logo_KJH_icon_fff.png") no-repeat 45% 55%;
+  background: #ef0010 url("../images/KUMHO_Logo_KJH_icon_fff.png") no-repeat 45%
+    55%;
   background-size: 50%;
   border-radius: 50%;
 }
@@ -72,6 +73,13 @@
   font-size: 1.2rem;
   font-weight: 400;
 }
+
+#content .contlist.tab1 .invest1 .iframe_head .main-desc {
+  font-size: 1rem;
+  margin-top: 4px;
+  opacity: 0.65;
+}
+
 #content .contlist.tab1 .invest1 .positive {
   color: #ef0010;
 }
@@ -86,8 +94,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 16px;
 }
-#content .contlist.tab1 .invest1 .middle .last span {
+#content .contlist.tab1 .invest1 .middle .last {
   font-size: 2.38rem;
   font-weight: 700;
   line-height: 1;
@@ -96,21 +105,13 @@
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 390px) {
-  #content .contlist.tab1 .invest1 .middle .changerate_box {
-    flex-direction: row;
-    gap: 8px;
-  }
-}
+
 @media screen and (orientation: landscape) {
   #content .contlist.tab1 .invest1 .middle .last span {
     font-size: 3rem;
   }
-  #content .contlist.tab1 .invest1 .middle .changerate_box {
-    flex-direction: row;
-    gap: 16px;
-  }
 }
+
 #content .contlist.tab1 .invest1 .middle .changerate_box li {
   display: flex;
   align-items: center;
@@ -146,7 +147,7 @@
 #content .contlist.tab1 .invest1 .middle .changerate_box .negative::before {
   content: "";
   display: inline-block;
-  background: url("../images/investment_negaitive.png");
+  background: url("../images/investment_negative.png");
   background-size: cover;
   width: 10px;
   height: 10px;
@@ -155,7 +156,7 @@
 /* .iframe_box bottom */
 #content .iframe_box .bottom {
   width: 100%;
-  font-size: .9rem;
+  font-size: 0.9rem;
   letter-spacing: -0.09rem;
   text-align: center;
 }
@@ -199,7 +200,7 @@
   font-weight: 500;
 }
 #content .tab_list_wrapper .tab_list_title {
-  font-size: .8rem;
+  font-size: 0.8rem;
   float: left;
 }
 #content .tab_list_wrapper .tabs {
@@ -357,16 +358,16 @@
   content: "%";
 }
 #content .contlist.tab1 .invest3 .graph .label2 .per {
-  color: #56423D;
+  color: #56423d;
 }
 #content .contlist.tab1 .invest3 .graph .label3 .per {
-  color: #BEA6A0;
+  color: #bea6a0;
 }
 #content .contlist.tab1 .invest3 .graph .label4 .per {
-  color: #0097D7;
+  color: #0097d7;
 }
 #content .contlist.tab1 .invest3 .graph .label5 .per {
-  color: #00D0FF;
+  color: #00d0ff;
 }
 #content .contlist.tab1 .invest3 .graph .label::before {
   content: "";
@@ -381,19 +382,19 @@
 }
 #content .contlist.tab1 .invest3 .graph .label2::before {
   content: "";
-  background: #56423D;
+  background: #56423d;
 }
 #content .contlist.tab1 .invest3 .graph .label3::before {
   content: "";
-  background: #BEA6A0;
+  background: #bea6a0;
 }
 #content .contlist.tab1 .invest3 .graph .label4::before {
   content: "";
-  background: #0097D7;
+  background: #0097d7;
 }
 #content .contlist.tab1 .invest3 .graph .label5::before {
   content: "";
-  background: #00D0FF;
+  background: #00d0ff;
 }
 
 /* ===== chartjs start ===== */
@@ -405,7 +406,6 @@
   margin: 0 auto 5%;
 }
 /* ===== chartjs end ===== */
-
 
 /* .invest4 */
 #content .contlist.tab1 .invest4 {
@@ -419,7 +419,6 @@
     position: sticky;
     left: 0;
     top: 0;
-  
   }
   table {
     width: 200%;
@@ -427,14 +426,19 @@
   }
 }
 
-#content .contlist.tab1 .invest4 table tr :is(th:first-child, td:first-child):not(th:last-of-type) {
+#content
+  .contlist.tab1
+  .invest4
+  table
+  tr
+  :is(th:first-child, td:first-child):not(th:last-of-type) {
   position: sticky;
   left: 0;
   top: 0;
   background: #fff;
   border-right: none;
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 1px;
     height: 100%;
@@ -512,7 +516,7 @@
 }
 
 /* .tab3 */
-#content .contlist.tab3 {  
+#content .contlist.tab3 {
 }
 #content .contlist.tab3 .financial {
   margin-bottom: 0;
