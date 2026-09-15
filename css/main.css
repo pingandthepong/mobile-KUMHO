@@ -338,7 +338,7 @@
 }
 
 #content .iframe_box .iframe_head .main-desc {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-top: 4px;
   opacity: 0.65;
 }
@@ -352,11 +352,10 @@
 /* .iframe_box .middle */
 #content .iframe_box .middle {
   width: 90%;
-  margin: 0 auto;
+  margin: 4px auto 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
 }
 #content .iframe_box .middle .last {
   font-size: 2.38rem;
