@@ -408,7 +408,7 @@
 #content .iframe_box .middle .changerate_box .negative::before {
   content: "";
   display: inline-block;
-  background: url("../images/investment_negaitive.png");
+  background: url("../images/investment_negative.png");
   background-size: cover;
   width: 10px;
   height: 10px;
